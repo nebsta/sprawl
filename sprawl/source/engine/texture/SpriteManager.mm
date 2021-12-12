@@ -6,13 +6,17 @@
 //  Copyright © 2015 The Caffeinated Coder. All rights reserved.
 //
 
-#include "SpriteManager.h"
+#include "SpriteManager.hpp"
 
-void SpriteManager::initialize() {
+SpriteManager::SpriteManager() {
     parseAtlas("main_tileset_hd");
 }
 
-GLKTextureInfo* SpriteManager::loadTexture(string filename) {
+SpriteManager::~SpriteManager() {
+    parseAtlas("main_tileset_hd");
+}
+
+GLKTextureInfo* SpriteManager::loadTexture(string filename) const {
     
     NSError *err;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:filename.c_str()] ofType:@"png"];
@@ -30,9 +34,9 @@ GLKTextureInfo* SpriteManager::loadTexture(string filename) {
     return texture;
 }
 
-Sprite SpriteManager::loadSprite(string file, string spriteName) {
+Sprite SpriteManager::loadSprite(const string& file, const string& spriteName) const {
     GLKTextureInfo *texture = loadTexture(file);
-    Region region = _allAtlases[file][spriteName];
+    Region region = _allAtlases.at(file).at(spriteName);
     return {texture,region};
 }
 

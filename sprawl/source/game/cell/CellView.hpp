@@ -11,12 +11,12 @@
 
 #include "ImageView.hpp"
 #include "CellDataModel.h"
-#include "SpriteManager.h"
+#include "SpriteManager.hpp"
 
 class CellView : public View {
     
 public:
-    CellView(CellDataModel model);
+    CellView(CellDataModel model, const SpriteLoader& spriteLoader);
     ~CellView();
     
     CellDataModel dataModel();

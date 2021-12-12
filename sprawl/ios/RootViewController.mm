@@ -23,14 +23,6 @@
     ScreenManager::instance().initialize([[UIScreen mainScreen] scale], self.view.frame.size.width, self.view.frame.size.height);
     
     [self setupOpenGL];
-    
-    SpriteManager::instance().initialize();
-    BoardManager::instance().initialize();
-    ShaderManager::instance().initialize();
-    BlueprintManager::instance().initialize();
-    
-    _mainView = new View(VECTOR_EMPTY,glm::vec2(self.view.frame.size.width,self.view.frame.size.height));
-    _mainView->renderer()->setTint(COLOR_RED);
 }
 
 - (void)dealloc {
@@ -84,7 +76,6 @@
     [EAGLContext setCurrentContext:self.context];
     
     ShaderManager::instance().teardown();
-    BoardManager::instance().teardown();
 }
 
 - (void)update {

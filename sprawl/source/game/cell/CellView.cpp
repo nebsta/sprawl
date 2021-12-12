@@ -8,11 +8,11 @@
 
 #include "CellView.hpp"
 
-CellView::CellView(CellDataModel dataModel) :
-_dataModel(dataModel),
+CellView::CellView(CellDataModel model, const SpriteLoader& spriteLoader) :
+_dataModel(model),
 _imageView(nullptr) {
     
-    Sprite sprite = spriteForType(dataModel.type);
+    Sprite sprite = spriteForType(spriteLoader, model.type);
     
     _imageView = new ImageView(sprite);
     _imageView->transform()->setSize(glm::vec2(50,50));

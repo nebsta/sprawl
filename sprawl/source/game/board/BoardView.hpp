@@ -6,12 +6,12 @@
 //  Copyright © 2016 The Caffeinated Coder. All rights reserved.
 //
 
-#ifndef BoardRenderer_hpp
-#define BoardRenderer_hpp
+#ifndef BoardView_hpp
+#define BoardView_hpp
 
 #include <vector>
 
-#include "SpriteManager.h"
+#include "SpriteManager.hpp"
 #include "MathConstants.h"
 #include "BoardDataModel.hpp"
 #include "BoardLayerView.hpp"
@@ -28,12 +28,13 @@ typedef enum BoardLayer {
 class BoardView : public View, public BoardDataModelListener {
     
 public:
-    BoardView();
+    BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader);
     ~BoardView();
     
     void addCell(CellDataModel cell, BoardLayer layer);
     void removeCell(CellDataModel cell, BoardLayer layer);
     
+    // BoardDataModelListener
     void onCellAdded(CellDataModel cell);
     void onCellRemoved(GridLocation location);
     void onBlueprintAdded(GridLocation origin, BlueprintDataModel blueprint);
@@ -42,4 +43,4 @@ private:
     std::map<int,BoardLayerView*> _layers;
 };
 
-#endif /* BoardRenderer_hpp */
+#endif /* BoardView_hpp */

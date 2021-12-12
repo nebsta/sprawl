@@ -11,8 +11,7 @@
 
 #include <string>
 
-#include "Sprite.h"
-#include "SpriteManager.h"
+#include "SpriteManager.hpp"
 #include "MathConstants.h"
 
 #define GLOCATION_EMPTY (GridLocation){-1,-1}
@@ -30,9 +29,9 @@ typedef struct GridLocation {
     int column; int row;
     
     GridLocation& operator+=(const GridLocation& s2) {
-        (*this).column += s2.column;
-        (*this).row += s2.row;
-        return *this;
+        column += s2.column;
+        row += s2.row;
+        return (*this);
     }
 } GridLocation;
 
@@ -53,13 +52,13 @@ inline std::string spriteNameForType(CellType type) {
     return name;
 }
 
-inline Sprite spriteForType(CellType type) {
+inline Sprite spriteForType(const SpriteLoader& loader, CellType type) {
     if (type == Cell_None) {
         return SpriteEmpty;
     }
     
     std::string name = spriteNameForType(type);
-    return SpriteManager::instance().loadSprite("main_tileset_hd",name);
+    return loader.loadSprite("main_tileset_hd",name);
 }
 
 inline bool operator==(const GridLocation& s1, const GridLocation& s2)

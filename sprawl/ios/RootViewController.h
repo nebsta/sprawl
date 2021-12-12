@@ -11,10 +11,8 @@
 
 #include "Logger.h"
 
-#include "ShaderManager.h"
-#include "SpriteManager.h"
-#include "BoardManager.hpp"
-#include "BlueprintManager.hpp"
+#include "BoardView.hpp"
+#include "ImageView.hpp"
 
 @interface RootViewController : GLKViewController {
     glm::mat4 _projectionMatrix;

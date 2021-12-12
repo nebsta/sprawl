@@ -8,13 +8,15 @@
 
 #include "BoardView.hpp"
 
-BoardView::BoardView() : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE) {
+BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE) {
+    model.setListener(this);
+    
     glm::vec2 size = transform()->size();
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform()->setLocalPosition(boardPosition);
     
     for (int i = 0; i < 2; i ++) {
-        BoardLayerView *layerView = new BoardLayerView(size);
+        BoardLayerView *layerView = new BoardLayerView(size, spriteLoader);
         addChild(layerView);
         _layers[i] = layerView;
     }

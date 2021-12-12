@@ -16,7 +16,7 @@
 
 class BoardLayerView : public View {
 public:
-    BoardLayerView(glm::vec2 size);
+    BoardLayerView(glm::vec2 size, const SpriteLoader& spriteLoader);
     ~BoardLayerView();
     
     void addCell(CellDataModel cell);
@@ -24,6 +24,7 @@ public:
     
 private:
     std::vector<ImageView*> _cellImages;
+    const SpriteLoader& _spriteLoader;
 };
 
 #endif /* BoardLayerView_hpp */
