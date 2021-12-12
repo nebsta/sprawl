@@ -24,7 +24,7 @@ public:
     void setTintColor(glm::vec4 tintColor);
     
 private:
-    ImageView *_imageView;
+    ImageView _imageView;
     CellDataModel _dataModel;
 };
 

@@ -14,14 +14,13 @@ _screenHandler(screenHandler),
 _spriteLoader(spriteLoader),
 _boardView(_boardDataModel, spriteLoader) {
     
-    _mainView.renderer()->setTint(COLOR_RED);
+    _mainView.renderer().setTint(COLOR_RED);
     
-    _mainView.addChild(&_boardView);
+    _mainView.addChild(_boardView);
     
     BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
     _boardDataModel.addBlueprint(blueprint);
 }
-
 
 void Game::update(const float& dt) {
     _mainView.update(dt);

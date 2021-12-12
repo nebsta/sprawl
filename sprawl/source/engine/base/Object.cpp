@@ -24,10 +24,6 @@ void Object::print() {
     Logger::logMessage(toString());
 }
 
-const char* Object::toCString() {
-    return toString().c_str();
-}
-
 std::string Object::toString() {
     return toStream().str();
 }

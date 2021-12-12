@@ -28,7 +28,6 @@ public:
     
     void print();
     
-    const char* toCString();
     std::string toString();
     std::stringstream toStream();
     

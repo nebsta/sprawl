@@ -21,7 +21,7 @@ ImageView::ImageView(Sprite sprite, glm::vec2 position) : ImageView(sprite,posit
 }
 
 ImageView::ImageView(Sprite sprite, glm::vec2 position, glm::vec2 size) :
-View(position,size,IMAGEVIEW_DEFAULT_COLOR, new ImageViewRenderer(sprite)) {
+View(position,size,IMAGEVIEW_DEFAULT_COLOR, ImageViewRenderer(sprite)) {
     
 }
 
@@ -32,8 +32,8 @@ ImageView::~ImageView() {
 #pragma mark Setters
 
 void ImageView::setSprite(Sprite sprite) {
-    if (_renderer != nullptr) {
-        ImageViewRenderer *renderer = (ImageViewRenderer*)_renderer;
-        renderer->setSprite(sprite);
-    }
+    
+    ImageViewRenderer renderer = (ImageViewRenderer)_renderer;
+    renderer.setSprite(sprite);
+    
 }

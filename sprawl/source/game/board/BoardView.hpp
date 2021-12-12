@@ -40,7 +40,7 @@ public:
     void onBlueprintAdded(GridLocation origin, BlueprintDataModel blueprint);
     
 private:
-    std::map<int,BoardLayerView*> _layers;
+    std::map<int,BoardLayerView> _layers;
 };
 
 #endif /* BoardView_hpp */

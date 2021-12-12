@@ -26,7 +26,7 @@ public:
     void setBoardInputListener(BoardInputListener *listener);
     
 private:
-    View *_leftView, *_rightView;
+    View _leftView, _rightView;
     
     BoardInputListener *_listener;
 };

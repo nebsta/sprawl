@@ -36,7 +36,7 @@ public:
     View(glm::vec2 position);
     View(glm::vec2 position, glm::vec2 size);
     View(glm::vec2 position, glm::vec2 size, glm::vec4 color);
-    View(glm::vec2 position, glm::vec2 size, glm::vec4 color, Renderer *renderer);
+    View(glm::vec2 position, glm::vec2 size, glm::vec4 color, const Renderer& renderer);
     ~View();
     
     void render();
@@ -50,20 +50,20 @@ public:
     void setOnTouchBegin(std::function<void(Touch)> callback);
     void setOnTouchEnd(std::function<void(Touch)> callback);
     
-    void addChild(View *view);
-    void removeChild(View *view);
+    void addChild(const View& view);
+    void removeChild(View view);
     bool hasChildren();
     
-    Transform* transform();
-    Renderer* renderer();
-    Responder* responder();
-    ViewAnimator* animator();
+    Transform& transform();
+    Renderer& renderer();
+    Responder& responder();
+    ViewAnimator& animator();
     
 protected:
-    Renderer *_renderer;
-    Transform *_transform;
-    ViewAnimator *_animator;
-    Responder *_responder;
+    Renderer _renderer;
+    Transform _transform;
+    ViewAnimator _animator;
+    Responder _responder;
     
     void consumeTransformChanges();
     void refreshRendererMatrix();
