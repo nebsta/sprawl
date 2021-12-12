@@ -18,9 +18,8 @@
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (nonatomic) Game *game;
-@property (nonatomic) View *mainView;
 @property (nonatomic) SpriteManager spriteManager;
-@property (nonatomic) ScreenManager *screenManager;
+@property (nonatomic) ScreenManager screenManager;
 - (void)setupOpenGL;
 - (void)tearDownGL;
 @end

@@ -26,8 +26,6 @@
     
     ShaderManager::instance().initialize();
     _game = new Game(ScreenManager::instance(), _spriteManager);
-    _mainView = new View(VECTOR_EMPTY, glm::vec2(self.view.frame.size.width, self.view.frame.size.height));
-    _mainView->renderer()->setTint(COLOR_RED);
 }
 
 - (void)dealloc {
@@ -97,8 +95,7 @@
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-//    _game->render();
-    _mainView->render();
+    _game->render();
 }
 
 #pragma mark UIGestureRecognizer

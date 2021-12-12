@@ -16,10 +16,10 @@ _boardView(_boardDataModel, spriteLoader) {
     
     _mainView.renderer()->setTint(COLOR_RED);
     
-//    _mainView.addChild(&_boardView);
-//    
-//    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
-//    _boardDataModel.addBlueprint(blueprint);
+    _mainView.addChild(&_boardView);
+    
+    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
+    _boardDataModel.addBlueprint(blueprint);
 }
 
 
