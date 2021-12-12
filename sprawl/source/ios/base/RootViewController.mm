@@ -22,13 +22,12 @@
     
     ScreenManager::instance().initialize([[UIScreen mainScreen] scale], self.view.frame.size.width, self.view.frame.size.height);
     
+    [self setupOpenGL];
     
     ShaderManager::instance().initialize();
     _game = new Game(ScreenManager::instance(), _spriteManager);
     _mainView = new View(VECTOR_EMPTY, glm::vec2(self.view.frame.size.width, self.view.frame.size.height));
     _mainView->renderer()->setTint(COLOR_RED);
-    
-    [self setupOpenGL];
 }
 
 - (void)dealloc {
