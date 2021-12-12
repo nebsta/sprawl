@@ -16,13 +16,9 @@
 
 #include "Sprite.h"
 #include "Logger.h"
+#include "SpriteLoader.h"
 
 using namespace std;
-
-class SpriteLoader {
-public:
-    virtual Sprite loadSprite(const string& file, const string& spriteName) const = 0;
-};
 
 class SpriteManager : public SpriteLoader {
     

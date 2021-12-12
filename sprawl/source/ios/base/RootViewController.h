@@ -11,16 +11,16 @@
 
 #include "Logger.h"
 
-#include "BoardView.hpp"
-#include "ImageView.hpp"
+#include "Game.hpp"
 
 @interface RootViewController : GLKViewController {
     glm::mat4 _projectionMatrix;
 }
 @property (strong, nonatomic) EAGLContext *context;
-@property (nonatomic) BoardView *boardView;
+@property (nonatomic) Game *game;
 @property (nonatomic) View *mainView;
-@property (nonatomic) float runningAverage;
+@property (nonatomic) SpriteManager spriteManager;
+@property (nonatomic) ScreenManager *screenManager;
 - (void)setupOpenGL;
 - (void)tearDownGL;
 @end

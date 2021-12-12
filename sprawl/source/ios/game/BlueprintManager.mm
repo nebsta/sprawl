@@ -8,7 +8,7 @@
 
 #include "BlueprintManager.hpp"
 
-void BlueprintManager::initialize() {
+BlueprintManager::BlueprintManager() {
     parseBlueprint("example_blueprint");
 }
 

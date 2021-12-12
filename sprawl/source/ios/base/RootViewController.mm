@@ -22,6 +22,12 @@
     
     ScreenManager::instance().initialize([[UIScreen mainScreen] scale], self.view.frame.size.width, self.view.frame.size.height);
     
+    
+    ShaderManager::instance().initialize();
+    _game = new Game(ScreenManager::instance(), _spriteManager);
+    _mainView = new View(VECTOR_EMPTY, glm::vec2(self.view.frame.size.width, self.view.frame.size.height));
+    _mainView->renderer()->setTint(COLOR_RED);
+    
     [self setupOpenGL];
 }
 
@@ -83,7 +89,7 @@
     self.frameLag += self.timeSinceLastUpdate;
     
     while (self.frameLag * 1000 >= MS_PER_UPDATE) {
-        _mainView->update(MS_PER_UPDATE / 1000.0);
+        _game->update(MS_PER_UPDATE / 1000.0);
         self.frameLag -= MS_PER_UPDATE/1000.0;
     }
 }
@@ -92,6 +98,7 @@
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
+//    _game->render();
     _mainView->render();
 }
 
@@ -99,24 +106,24 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    NSSet *set = [event touchesForView:self.view];
-    if ([set count] > 0) {
-        UITouch *touch = [set anyObject];
-        CGPoint location = [touch locationInView:self.view];
-        Touch data = {(int)touch.hash,glm::vec2(location.x,location.y)};
-        _mainView->touchBegin(data);
-    }
+//    NSSet *set = [event touchesForView:self.view];
+//    if ([set count] > 0) {
+//        UITouch *touch = [set anyObject];
+//        CGPoint location = [touch locationInView:self.view];
+//        Touch data = {(int)touch.hash,glm::vec2(location.x,location.y)};
+//        _mainView->touchBegin(data);
+//    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    NSSet *set = [event touchesForView:self.view];
-    if ([set count] > 0) {
-        UITouch *touch = [set anyObject];
-        CGPoint location = [touch locationInView:self.view];
-        Touch data = {(int)touch.hash,glm::vec2(location.x,location.y)};
-        _mainView->touchEnd(data);
-    }
+//    NSSet *set = [event touchesForView:self.view];
+//    if ([set count] > 0) {
+//        UITouch *touch = [set anyObject];
+//        CGPoint location = [touch locationInView:self.view];
+//        Touch data = {(int)touch.hash,glm::vec2(location.x,location.y)};
+//        _mainView->touchEnd(data);
+//    }
 }
 
 - (void)touchesCancelled:(NSSet<UITouch*>*)touches withEvent:(UIEvent *)event {

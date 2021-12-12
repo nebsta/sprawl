@@ -17,12 +17,8 @@
 
 class BlueprintManager : public Object {
 public:
-    static BlueprintManager& instance() {
-        static BlueprintManager instance;
-        return instance;
-    }
+    BlueprintManager();
     
-    void initialize();
     BlueprintDataModel getRandomBlueprint();
     
 private:

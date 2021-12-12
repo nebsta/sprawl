@@ -8,15 +8,25 @@
 
 #include "Game.hpp"
 
-Game::Game(const int& screenWidth, const int& screenHeight) :
-_mainView(VECTOR_EMPTY,glm::vec2(screenWidth,screenHeight)) {
+Game::Game(const ScreenHandler& screenHandler, const SpriteLoader& spriteLoader) :
+_mainView(VECTOR_EMPTY,glm::vec2(screenHandler.screenWidth(),screenHandler.screenHeight())),
+_screenHandler(screenHandler),
+_spriteLoader(spriteLoader),
+_boardView(_boardDataModel, spriteLoader) {
     
     _mainView.renderer()->setTint(COLOR_RED);
     
-//    BoardDataModel model;
-//    _boardView = new BoardView(model);
-//    _mainView->addChild(_boardView);
-    
-//    BlueprintDataModel blueprint = BlueprintManager::instance().getRandomBlueprint();
-//    model.addBlueprint(blueprint);
+//    _mainView.addChild(&_boardView);
+//    
+//    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
+//    _boardDataModel.addBlueprint(blueprint);
+}
+
+
+void Game::update(const float& dt) {
+    _mainView.update(dt);
+}
+
+void Game::render() {
+    _mainView.render();
 }

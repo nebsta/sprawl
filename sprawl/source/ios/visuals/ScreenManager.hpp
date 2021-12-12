@@ -12,8 +12,9 @@
 #include <stdio.h>
 #include <glm.hpp>
 #include "MathConstants.h"
+#include "ScreenHandler.h"
 
-class ScreenManager {
+class ScreenManager : public ScreenHandler {
     
 public:
     static ScreenManager& instance() {
@@ -23,10 +24,8 @@ public:
     
     void initialize(const float screenScale, const float screenWith, const float screenHeight);
     
+    // ScreenHandler
     glm::vec2 convertToPixels(const glm::vec2& vector) const;
-    //    static glm::vec2 localToScreenSpace(glm::vec2 pos, Transform *transform);
-    //    static glm::vec2 screenToLocalSpace(glm::vec2 pos, Transform *transform);
-    //    static glm::vec2 convertToSpace(glm::vec2 pos, Transform *origin, Transform *target);
     
     float screenScale() const;
     float screenWidth() const;
