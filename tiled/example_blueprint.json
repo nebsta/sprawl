@@ -1,0 +1,63 @@
+{ "height":3,
+ "layers":[
+        {
+         "data":[0, 2, 0, 0, 2, 3, 2, 0, 2, 2, 1, 2],
+         "height":3,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":4,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"left-down",
+ "tileheight":128,
+ "tilesets":[
+        {
+         "columns":4,
+         "firstgid":1,
+         "image":"..\/Documents\/sprawl\/sprawl\/assets\/tilesets\/main_tileset_HD.png",
+         "imageheight":128,
+         "imagewidth":512,
+         "margin":0,
+         "name":"main_tileset_HD",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":4,
+         "tileheight":128,
+         "tileproperties":
+            {
+             "0":
+                {
+                 "something":"derp",
+                 "type":"door"
+                },
+             "1":
+                {
+                 "type":"wall"
+                },
+             "2":
+                {
+                 "type":"window"
+                },
+             "3":
+                {
+                 "type":"none"
+                }
+            },
+         "tilewidth":128
+        }],
+ "tilewidth":128,
+ "version":1,
+ "width":4
+}

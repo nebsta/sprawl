@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict/>
+	<key>frames</key>
+	<dict>
+		<key>eggplant</key>
+		<dict>
+			<key>boundingPolygon</key>
+			<array/>
+			<key>boundsOffsetX</key>
+			<real>0.0</real>
+			<key>boundsOffsetY</key>
+			<real>0.0</real>
+			<key>boundsSizeH</key>
+			<real>128</real>
+			<key>boundsSizeW</key>
+			<real>128</real>
+			<key>spriteOffsetX</key>
+			<real>0.0</real>
+			<key>spriteOffsetY</key>
+			<real>0.0</real>
+			<key>spriteSizeH</key>
+			<real>128</real>
+			<key>spriteSizeW</key>
+			<real>128</real>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>Atlas</string>
+		<key>size</key>
+		<string>{128, 128}</string>
+		<key>version</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>
