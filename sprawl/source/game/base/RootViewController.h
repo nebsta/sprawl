@@ -16,11 +16,8 @@
 #include "BoardManager.hpp"
 #include "BlueprintManager.hpp"
 
-#include "BoardContext.hpp"
-
 @interface RootViewController : GLKViewController {
     glm::mat4 _projectionMatrix;
-    BoardContext *_boardContext;
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (nonatomic) BoardView *boardView;

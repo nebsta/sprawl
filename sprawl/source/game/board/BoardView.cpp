@@ -13,11 +13,11 @@ BoardView::BoardView() : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE) {
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform()->setLocalPosition(boardPosition);
     
-//    for (int i = 0; i < 2; i ++) {
-//        BoardLayerView *layerView = new BoardLayerView(size);
-//        addChild(layerView);
-//        _layers[i] = layerView;
-//    }
+    for (int i = 0; i < 2; i ++) {
+        BoardLayerView *layerView = new BoardLayerView(size);
+        addChild(layerView);
+        _layers[i] = layerView;
+    }
     
 //    View *animationTest = new View();
 //    animationTest->transform()->setLocalPosition(glm::vec2(50,50));

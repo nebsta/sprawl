@@ -31,10 +31,6 @@
     
     _mainView = new View(VECTOR_EMPTY,glm::vec2(self.view.frame.size.width,self.view.frame.size.height));
     _mainView->renderer()->setTint(COLOR_RED);
-    
-    _boardContext = new BoardContext();
-    _boardContext->init();
-    _boardContext->initWithView(_mainView);
 }
 
 - (void)dealloc {

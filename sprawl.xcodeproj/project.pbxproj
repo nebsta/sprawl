@@ -23,8 +23,6 @@
 		430A3C391BEF86D600A7128E /* Logger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C381BEF86D600A7128E /* Logger.mm */; };
 		430A3C3C1BEF871C00A7128E /* ViewHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3A1BEF871C00A7128E /* ViewHelper.cpp */; };
 		430A3C3F1BEF8ADB00A7128E /* SpriteManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */; };
-		431DCDE01C5D4187009CA06A /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDDE1C5D4187009CA06A /* Context.cpp */; };
-		431DCDE31C5D421A009CA06A /* BoardContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE11C5D421A009CA06A /* BoardContext.cpp */; };
 		431DCDE61C5D4620009CA06A /* BoardLayerView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */; };
 		431DCDE91C5D64F3009CA06A /* BlueprintManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */; };
 		431DCDED1C5D665E009CA06A /* example_blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 431DCDEC1C5D665E009CA06A /* example_blueprint.json */; };
@@ -94,10 +92,6 @@
 		430A3C3B1BEF871C00A7128E /* ViewHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewHelper.hpp; path = source/engine/helpers/ViewHelper.hpp; sourceTree = "<group>"; };
 		430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = SpriteManager.mm; path = source/engine/texture/SpriteManager.mm; sourceTree = "<group>"; };
 		430A3C3E1BEF8ADB00A7128E /* SpriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteManager.h; path = source/engine/texture/SpriteManager.h; sourceTree = "<group>"; };
-		431DCDDE1C5D4187009CA06A /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Context.cpp; path = source/game/context/Context.cpp; sourceTree = "<group>"; };
-		431DCDDF1C5D4187009CA06A /* Context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Context.hpp; path = source/game/context/Context.hpp; sourceTree = "<group>"; };
-		431DCDE11C5D421A009CA06A /* BoardContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardContext.cpp; path = source/game/context/BoardContext.cpp; sourceTree = "<group>"; };
-		431DCDE21C5D421A009CA06A /* BoardContext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardContext.hpp; path = source/game/context/BoardContext.hpp; sourceTree = "<group>"; };
 		431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardLayerView.cpp; path = source/game/board/BoardLayerView.cpp; sourceTree = "<group>"; };
 		431DCDE51C5D4620009CA06A /* BoardLayerView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardLayerView.hpp; path = source/game/board/BoardLayerView.hpp; sourceTree = "<group>"; };
 		431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BlueprintManager.mm; path = source/game/blueprint/BlueprintManager.mm; sourceTree = "<group>"; };
@@ -197,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				43FFDA4C1C829F92000BFB25 /* input */,
-				431DCDDD1C5D416F009CA06A /* context */,
 				43EDA6A01C417FAB00FE7F8F /* cell */,
 				430A3BEF1BEF842100A7128E /* base */,
 				430A3BF01BEF842F00A7128E /* board */,
@@ -334,17 +327,6 @@
 				430A3C381BEF86D600A7128E /* Logger.mm */,
 			);
 			name = util;
-			sourceTree = "<group>";
-		};
-		431DCDDD1C5D416F009CA06A /* context */ = {
-			isa = PBXGroup;
-			children = (
-				431DCDDE1C5D4187009CA06A /* Context.cpp */,
-				431DCDDF1C5D4187009CA06A /* Context.hpp */,
-				431DCDE11C5D421A009CA06A /* BoardContext.cpp */,
-				431DCDE21C5D421A009CA06A /* BoardContext.hpp */,
-			);
-			name = context;
 			sourceTree = "<group>";
 		};
 		431DCDEB1C5D6652009CA06A /* blueprints */ = {
@@ -565,6 +547,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -661,7 +644,6 @@
 				430A3C311BEF86BC00A7128E /* Transform.cpp in Sources */,
 				430A3C121BEF84D500A7128E /* Animator.cpp in Sources */,
 				4329CA641BEFF5E600F18459 /* Renderer.cpp in Sources */,
-				431DCDE01C5D4187009CA06A /* Context.cpp in Sources */,
 				4343C9E71C425D2B006FED90 /* Button.cpp in Sources */,
 				43EDA6A61C417FD200FE7F8F /* CellView.cpp in Sources */,
 				43CC37C31BC17761009F3FD0 /* main.m in Sources */,
@@ -671,7 +653,6 @@
 				430A3BFA1BEF845600A7128E /* BoardManager.cpp in Sources */,
 				430A3C131BEF84D500A7128E /* ViewAnimator.cpp in Sources */,
 				431DCDE91C5D64F3009CA06A /* BlueprintManager.mm in Sources */,
-				431DCDE31C5D421A009CA06A /* BoardContext.cpp in Sources */,
 				431DCDE61C5D4620009CA06A /* BoardLayerView.cpp in Sources */,
 				430A3C1C1BEF868800A7128E /* MessageManager.cpp in Sources */,
 				43FFDA4F1C829FBA000BFB25 /* BoardInputView.cpp in Sources */,
