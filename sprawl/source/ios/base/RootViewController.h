@@ -18,6 +18,7 @@
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (nonatomic) Game *game;
+@property (nonatomic) View *someView;
 @property (nonatomic) SpriteManager spriteManager;
 @property (nonatomic) ScreenManager screenManager;
 - (void)setupOpenGL;

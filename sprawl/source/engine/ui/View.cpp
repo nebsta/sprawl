@@ -18,17 +18,17 @@ View::View(glm::vec2 position) : View(position,VIEW_DEFAULT_SIZE) {
     
 }
 
-View::View(glm::vec2 position, glm::vec2 size) : View(position,size,VIEW_DEFAULT_COLOR) {
-    
-}
+//View::View(glm::vec2 position, glm::vec2 size) : View(position,size,VIEW_DEFAULT_COLOR) {
+//    
+//}
 
-View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size,ViewRenderer(color))
+View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size)
 {
 
 }
 
-View::View(glm::vec2 position, glm::vec2 size, const Renderer& renderer) :
-_renderer(renderer),
+View::View(glm::vec2 position, glm::vec2 size) :
+_renderer(ViewRenderer(COLOR_RED)),
 _transform(Transform(position,size)),
 _responder(_transform),
 _screenManager(ScreenManager::instance()) {

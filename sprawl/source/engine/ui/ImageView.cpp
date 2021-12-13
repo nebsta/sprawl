@@ -20,7 +20,7 @@ ImageView::ImageView(Sprite sprite, glm::vec2 position) : ImageView(sprite,posit
     
 }
 
-ImageView::ImageView(Sprite sprite, glm::vec2 position, glm::vec2 size) : View(position, size, ImageViewRenderer(sprite)) {
+ImageView::ImageView(Sprite sprite, glm::vec2 position, glm::vec2 size) { //: View(position, size, ImageViewRenderer(sprite)) {
     
 }
 
