@@ -34,6 +34,9 @@
     if ([EAGLContext currentContext] == self.context) {
         [EAGLContext setCurrentContext:nil];
     }
+    
+    delete _game;
+    _game = nullptr;
 }
 
 - (void)didReceiveMemoryWarning {

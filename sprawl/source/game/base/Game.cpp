@@ -22,6 +22,10 @@ _spriteLoader(spriteLoader) {
 //    _boardDataModel.addBlueprint(blueprint);
 }
 
+Game::~Game() {
+    
+}
+
 void Game::update(const float& dt) {
     _mainView.update(dt);
 }

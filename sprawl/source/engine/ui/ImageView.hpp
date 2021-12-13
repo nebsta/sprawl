@@ -17,7 +17,6 @@
 #include "ImageViewRenderer.hpp"
 
 #define IMAGEVIEW_DEFAULT_POSITION VECTOR_EMPTY
-#define IMAGEVIEW_DEFAULT_COLOR COLOR_WHITE
 #define IMAGEVIEW_DEFAULT_SHAPE 
 
 class ImageView : public View {

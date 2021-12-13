@@ -22,33 +22,31 @@ View::View(glm::vec2 position, glm::vec2 size) : View(position,size,VIEW_DEFAULT
     
 }
 
-View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size,color,ViewRenderer(color))
+View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size,ViewRenderer(color))
 {
 
 }
 
-View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color, const Renderer& renderer) :
+View::View(glm::vec2 position, glm::vec2 size, const Renderer& renderer) :
 _renderer(renderer),
 _transform(Transform(position,size)),
 _responder(_transform),
 _screenManager(ScreenManager::instance()) {
-    _renderer.setTint(color);
     refreshRendererMatrix();
     refreshRendererClip();
 }
 
 void View::render() {
-    
     _renderer.render();
     
-    _renderer.pushClippingRect();
-    
-    if (hasChildren()) {
-        for (ViewIterator iter = _children.begin(); iter != _children.end(); iter++) {
-            (*iter)->render();
-        }
+    if (!hasChildren()) {
+        return;
     }
     
+    _renderer.pushClippingRect();
+    for (ViewIterator iter = _children.begin(); iter != _children.end(); iter++) {
+        (*iter)->render();
+    }
     _renderer.popClippingRect();
 }
 

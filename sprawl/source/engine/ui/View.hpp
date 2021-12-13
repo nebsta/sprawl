@@ -36,7 +36,7 @@ public:
     View(glm::vec2 position);
     View(glm::vec2 position, glm::vec2 size);
     View(glm::vec2 position, glm::vec2 size, glm::vec4 color);
-    View(glm::vec2 position, glm::vec2 size, glm::vec4 color, const Renderer& renderer);
+    View(glm::vec2 position, glm::vec2 size, const Renderer& renderer);
     
     void render();
     void update(float dt);

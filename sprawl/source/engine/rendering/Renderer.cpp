@@ -71,15 +71,20 @@ void Renderer::render() {
 #pragma mark Clipping
 
 void Renderer::pushClippingRect() {
-    glGetIntegerv(GL_SCISSOR_BOX, _parentScissorRect);
-    
-    // Applying clipping plane for children
-    if (_clipChildren) {
-        glScissor(_clippingRect.x, _clippingRect.y, _clippingRect.z, _clippingRect.w);
+    if (!_clipChildren) {
+        return;
     }
+    
+    // save a copy of the current clipping plan and applying our own clipping
+    glGetIntegerv(GL_SCISSOR_BOX, _parentScissorRect);
+    glScissor(_clippingRect.x, _clippingRect.y, _clippingRect.z, _clippingRect.w);
 }
 
 void Renderer::popClippingRect() {
+    if (!_clipChildren) {
+        return;
+    }
+    
     glScissor(_parentScissorRect[0], _parentScissorRect[1], _parentScissorRect[2], _parentScissorRect[3]);
 }
 
