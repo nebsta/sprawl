@@ -53,6 +53,13 @@ void Renderer::render() {
     glUniformMatrix4fv(_modelviewId, 1, 0, &_modelviewMatrix[0][0]);
     glUniformMatrix4fv(_projectionId, 1, 0, &_projectionMatrix[0][0]);
 
+    std::string modelStr = glm::to_string(_modelviewMatrix);
+    std::string projStr = glm::to_string(_projectionMatrix);
+    
+    Logger::logMessage(modelStr);
+    Logger::logMessage(projStr);
+    Logger::logMessage("");
+    
     onPreDraw();
 
     glDrawArrays(GL_TRIANGLE_STRIP, 0, _mesh.vertexCount);

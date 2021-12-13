@@ -11,6 +11,7 @@
 
 #import <OpenGLES/ES2/glext.h>
 #import <matrix_transform.hpp>
+#include <glm/gtx/string_cast.hpp>
 
 #include <stdio.h>
 #include <glm.hpp>
