@@ -65,6 +65,7 @@ public:
     Renderer(Mesh mesh, glm::vec4 tint, std::string shader);
     ~Renderer();
     
+    void cleanup();
     void render();
     
     void pushClippingRect();

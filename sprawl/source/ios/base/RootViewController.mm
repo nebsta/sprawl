@@ -25,10 +25,7 @@
     [self setupOpenGL];
     
     ShaderManager::instance().initialize();
-//    _game = new Game(ScreenManager::instance(), _spriteManager);
-    
-    _someView = new View(VECTOR_EMPTY,glm::vec2(ScreenManager::instance().screenWidth(),ScreenManager::instance().screenHeight()));
-    _someView->renderer().setTint(COLOR_BLUE);
+    _game = new Game(ScreenManager::instance(), _spriteManager);
 }
 
 - (void)dealloc {
@@ -92,7 +89,7 @@
     self.frameLag += self.timeSinceLastUpdate;
     
     while (self.frameLag * 1000 >= MS_PER_UPDATE) {
-//        _game->update(MS_PER_UPDATE / 1000.0);
+        _game->update(MS_PER_UPDATE / 1000.0);
         self.frameLag -= MS_PER_UPDATE/1000.0;
     }
 }
@@ -101,8 +98,7 @@
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-//    _game->render();
-    _someView->render();
+    _game->render();
 }
 
 #pragma mark UIGestureRecognizer

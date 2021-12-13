@@ -39,9 +39,13 @@ _clipChildren(true) {
 }
 
 Renderer::~Renderer() {
+}
+
+void Renderer::cleanup() {
     glDeleteBuffers(1, &_vertexBuffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
 }
+
 
 void Renderer::render() {
     
@@ -52,13 +56,6 @@ void Renderer::render() {
     glUniform4fv(_tintId, 1, &_tint[0]);
     glUniformMatrix4fv(_modelviewId, 1, 0, &_modelviewMatrix[0][0]);
     glUniformMatrix4fv(_projectionId, 1, 0, &_projectionMatrix[0][0]);
-
-    std::string modelStr = glm::to_string(_modelviewMatrix);
-    std::string projStr = glm::to_string(_projectionMatrix);
-    
-    Logger::logMessage(modelStr);
-    Logger::logMessage(projStr);
-    Logger::logMessage("");
     
     onPreDraw();
 

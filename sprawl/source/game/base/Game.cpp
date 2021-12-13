@@ -11,15 +11,15 @@
 Game::Game(const ScreenHandler& screenHandler, const SpriteLoader& spriteLoader) :
 _mainView(VECTOR_EMPTY,glm::vec2(screenHandler.screenWidth(),screenHandler.screenHeight())),
 _screenHandler(screenHandler),
-_spriteLoader(spriteLoader) {
-//_boardView(_boardDataModel, spriteLoader) {
+_spriteLoader(spriteLoader),
+_boardView(_boardDataModel, spriteLoader) {
     
     _mainView.renderer().setTint(COLOR_RED);
     
-//    _mainView.addChild(&_boardView);
+    _mainView.addChild(&_boardView);
     
-//    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
-//    _boardDataModel.addBlueprint(blueprint);
+    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
+    _boardDataModel.addBlueprint(blueprint);
 }
 
 Game::~Game() {
