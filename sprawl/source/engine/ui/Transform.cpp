@@ -46,18 +46,18 @@ void Transform::setConstraint(TransformConstraint constraint) {
     _propertiesChanged = true;
 }
 
-void Transform::setParent(Transform *parent) {
+void Transform::setParent(Transform* const parent) {
     _parent = parent;
     _propertiesChanged = true;
 }
 
 #pragma mark Getters
 
-glm::vec2 Transform::localPosition() {
+glm::vec2 Transform::localPosition() const {
     return _localPosition;
 }
 
-glm::vec2 Transform::screenPosition() {
+glm::vec2 Transform::screenPosition() const {
     glm::vec2 result = glm::vec2();
     if (_parent != nullptr) {
         result = _parent->screenPosition();
@@ -65,11 +65,11 @@ glm::vec2 Transform::screenPosition() {
     return result + _localPosition;
 }
 
-const bool Transform::hasParent() {
+const bool Transform::hasParent() const {
   return _parent != nullptr;
 }
 
-const glm::mat4 Transform::matrix() {
+const glm::mat4 Transform::matrix() const {
     glm::mat4 matrix = glm::mat4();
     glm::vec2 resultPosition = screenPosition();
     glm::vec2 resultSize = size();
@@ -92,7 +92,7 @@ const glm::mat4 Transform::matrix() {
     return matrix;
 }
 
-const glm::vec2 Transform::size() {
+const glm::vec2 Transform::size() const {
     return _size;
 }
 
@@ -104,7 +104,7 @@ const bool Transform::consumePropertyChanges() {
     return true;
 }
 
-const glm::vec4 Transform::rect() {
+const glm::vec4 Transform::rect() const {
     glm::vec2 pixelPosition = _screenManager->convertToPixels(screenPosition());
     glm::vec2 pixelSize = _screenManager->convertToPixels(size());
     
@@ -117,12 +117,12 @@ const glm::vec4 Transform::rect() {
     return rect;
 }
 
-bool Transform::containsLocalPoint(glm::vec2 point) {
+bool Transform::containsLocalPoint(glm::vec2 point) const {
     return point.x >= _localPosition.x && point.y >= _localPosition.y &&
            point.x <= _localPosition.x + _size.x && point.y <= _localPosition.y + _size.y;
 }
 
-bool Transform::containsScreenPoint(glm::vec2 point) {
+bool Transform::containsScreenPoint(glm::vec2 point) const {
     glm::vec2 sPos = screenPosition();
     
     return point.x >= sPos.x && point.y >= sPos.y &&

@@ -33,7 +33,7 @@ ImageView::~ImageView() {
 
 void ImageView::setSprite(Sprite sprite) {
     
-    ImageViewRenderer renderer = (ImageViewRenderer)_renderer;
+    ImageViewRenderer renderer = (ImageViewRenderer&)_renderer;
     renderer.setSprite(sprite);
     
 }

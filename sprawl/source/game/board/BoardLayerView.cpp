@@ -18,10 +18,10 @@ BoardLayerView::~BoardLayerView() {
 }
 
 void BoardLayerView::addCell(CellDataModel cell) {
-    CellView *view = new CellView(cell, _spriteLoader);
-    view->transform()->setLocalPosition(glm::vec2(cell.location.column*50,cell.location.row*50));
-    view->transform()->setSize(glm::vec2(50,50));
-    addChild(view);
+    CellView view = CellView(cell, _spriteLoader);
+    view.transform().setLocalPosition(glm::vec2(cell.location.column*50,cell.location.row*50));
+    view.transform().setSize(glm::vec2(50,50));
+    addChild(&view);
 }
 
 void BoardLayerView::removeCell(CellDataModel cell) {

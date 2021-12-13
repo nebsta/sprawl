@@ -29,6 +29,8 @@ View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,
 
 View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color, const Renderer& renderer) :
 _renderer(renderer),
+_transform(Transform(position,size)),
+_responder(_transform),
 _screenManager(ScreenManager::instance()) {
     _renderer.setTint(color);
     refreshRendererMatrix();
@@ -48,7 +50,6 @@ void View::render() {
     }
     
     _renderer.popClippingRect();
-    
 }
 
 void View::update(float dt) {
@@ -136,35 +137,45 @@ void View::setOnTouchEnd(std::function<void (Touch)> callback) {
 
 #pragma mark Child Management
 
-void View::addChild(const View& child) {
+void View::addChild(View* const child) {
+    
+    if (child == nullptr) {
+        return;
+    }
+    
     ViewIterator pos = std::find(_children.begin(), _children.end(), child);
     if (pos != _children.end()) {
         return;
     }
     _children.push_back(child);
   
-    child.transform().setParent(_transform);
+    child->transform().setParent(&_transform);
     
-    _responder.addChild(child.responder());
+    _responder.addChild(&child->responder());
     
     refreshRendererMatrix();
     refreshRendererClip();
 }
 
-void View::removeChild(View *child) {
+void View::removeChild(View* const child) {
+    
+    if (child == nullptr) {
+        return;
+    }
+    
     ViewIterator pos = std::find(_children.begin(), _children.end(), child);
     if (pos == _children.end()) {
         return;
     }
     _children.erase(pos);
   
-    child->transform()->setParent(nullptr);
+    child->transform().setParent(nullptr);
     
     refreshRendererMatrix();
     refreshRendererClip();
 }
 
-bool View::hasChildren() {
+bool View::hasChildren() const {
     return _children.size() != 0;
 }
 

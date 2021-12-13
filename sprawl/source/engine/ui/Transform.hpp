@@ -39,17 +39,17 @@ public:
     void setLocalPosition(glm::vec2 localPosition);
     void setSize(glm::vec2 size);
     void setConstraint(TransformConstraint constraint);
-    void setParent(Transform *parent);
+    void setParent(Transform* const parent);
   
-    glm::vec2 localPosition();
-    glm::vec2 screenPosition();
-    const glm::vec2 size();
-    const glm::mat4 matrix();
-    const glm::vec4 rect();
+    glm::vec2 localPosition() const;
+    glm::vec2 screenPosition() const;
+    const glm::vec2 size() const;
+    const glm::mat4 matrix() const;
+    const glm::vec4 rect() const;
     const bool consumePropertyChanges();
   
-    bool containsLocalPoint(glm::vec2 point);
-    bool containsScreenPoint(glm::vec2 point);
+    bool containsLocalPoint(glm::vec2 point) const;
+    bool containsScreenPoint(glm::vec2 point) const;
     
 private:
     ScreenManager *_screenManager;
@@ -60,7 +60,7 @@ private:
     
     TransformConstraint _constraint;
     Transform *_parent;
-    const bool hasParent();
+    const bool hasParent() const;
 };
 
 #endif /* Transform_hpp */

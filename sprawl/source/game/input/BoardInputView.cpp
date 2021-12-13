@@ -14,12 +14,12 @@ BoardInputView::BoardInputView() : View() {
     
     _leftView.renderer().setTint(COLOR_CLEAR);
     _leftView.transform().setSize(glm::vec2(screenWidth()*0.5f,screenHeight()));
-    addChild(_leftView);
+    addChild(&_leftView);
     
     _rightView.renderer().setTint(COLOR_CLEAR);
     _rightView.transform().setLocalPosition(glm::vec2(screenWidth()*0.5,0.0f));
     _rightView.transform().setSize(glm::vec2(screenWidth()*0.5f,screenHeight()));
-    addChild(_rightView);
+    addChild(&_rightView);
     
     _leftView.setOnTouchBegin([=](Touch touch) {
         Logger::logMessage("Left Input");

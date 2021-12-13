@@ -17,8 +17,8 @@ BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : 
     
     for (int i = 0; i < 2; i ++) {
         BoardLayerView layerView = BoardLayerView(size, spriteLoader);
-        addChild(layerView);
-        _layers[i] = layerView;
+        addChild(&layerView);
+        _layers[i] = &layerView;
     }
     
 //    View *animationTest = new View();

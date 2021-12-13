@@ -33,25 +33,23 @@ typedef enum ResponderState {
 class Responder : public Object {
     
 public:
-    Responder();
-    Responder(Transform *transform);
+    Responder(const Transform& transform);
     ~Responder();
     
     void setOnTouchBeginCallback(TouchCallback callback);
     void setOnTouchEndCallback(TouchCallback callback);
-    void setTransform(Transform *transform);
     
     void onTouchBegin(Touch touch);
     void onTouchEnd(Touch touch);
     
-    void addChild(Responder *responder);
+    void addChild(Responder* const responder);
     
-    bool hasChildren();
+    bool hasChildren() const;
     
 private:
     std::vector<Responder*> _children;
     
-    Transform *_transform;
+    const Transform& _transform;
     
     TouchCallback _onTouchBegin;
     TouchCallback _onTouchEnd;

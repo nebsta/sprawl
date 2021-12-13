@@ -37,7 +37,6 @@ public:
     View(glm::vec2 position, glm::vec2 size);
     View(glm::vec2 position, glm::vec2 size, glm::vec4 color);
     View(glm::vec2 position, glm::vec2 size, glm::vec4 color, const Renderer& renderer);
-    ~View();
     
     void render();
     void update(float dt);
@@ -50,9 +49,9 @@ public:
     void setOnTouchBegin(std::function<void(Touch)> callback);
     void setOnTouchEnd(std::function<void(Touch)> callback);
     
-    void addChild(const View& view);
-    void removeChild(View view);
-    bool hasChildren();
+    void addChild(View* const view);
+    void removeChild(View* const view);
+    bool hasChildren() const;
     
     Transform& transform();
     Renderer& renderer();

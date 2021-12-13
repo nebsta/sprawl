@@ -9,13 +9,11 @@
 #include "CellView.hpp"
 
 CellView::CellView(CellDataModel model, const SpriteLoader& spriteLoader) :
-_dataModel(model)) {
-    
-    Sprite sprite = spriteForType(spriteLoader, model.type);
-    _imageView = ImageView(sprite);
+_dataModel(model),
+_imageView(spriteForType(spriteLoader, model.type)) {
     
     _imageView.transform().setSize(glm::vec2(50,50));
-    addChild(_imageView);
+    addChild(&_imageView);
 }
 
 CellView::~CellView() {
