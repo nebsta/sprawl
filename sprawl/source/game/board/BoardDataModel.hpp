@@ -22,9 +22,9 @@
 
 class BoardDataModelListener {
 public:
-    virtual void onCellAdded(CellDataModel cell) = 0;
-    virtual void onCellRemoved(GridLocation location) = 0;
-    virtual void onBlueprintAdded(GridLocation origin, BlueprintDataModel blueprint) = 0;
+    virtual void onCellAdded(const CellDataModel& cell) = 0;
+    virtual void onCellRemoved(const GridLocation& location) = 0;
+    virtual void onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint) = 0;
 };
 
 class BoardDataModel : public Object {

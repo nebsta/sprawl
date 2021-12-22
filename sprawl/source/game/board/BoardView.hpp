@@ -31,16 +31,17 @@ public:
     BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader);
     ~BoardView();
     
-    void addCell(CellDataModel cell, BoardLayer layer);
-    void removeCell(CellDataModel cell, BoardLayer layer);
+    void addCell(const CellDataModel& cell, const BoardLayer& layer);
+    void removeCell(const CellDataModel& cell, const BoardLayer& layer);
     
     // BoardDataModelListener
-    void onCellAdded(CellDataModel cell);
-    void onCellRemoved(GridLocation location);
-    void onBlueprintAdded(GridLocation origin, BlueprintDataModel blueprint);
+    void onCellAdded(const CellDataModel& cell);
+    void onCellRemoved(const GridLocation& location);
+    void onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint);
     
 private:
-    std::map<int,BoardLayerView*> _layers;
+    BoardLayerView _layerBlueprint;
+    BoardLayerView _layerBlocks;
 };
 
 #endif /* BoardView_hpp */

@@ -39,6 +39,7 @@ _clipChildren(true) {
 }
 
 Renderer::~Renderer() {
+    Logger::logMessage("Destroy");
 }
 
 void Renderer::cleanup() {

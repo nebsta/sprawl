@@ -8,18 +8,16 @@
 
 #include "BoardView.hpp"
 
-BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE) {
+BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE),
+_layerBlueprint(transform().size(), spriteLoader),
+_layerBlocks(transform().size(), spriteLoader)
+{
     model.setListener(this);
     
     glm::vec2 size = transform().size();
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform().setLocalPosition(boardPosition);
     
-    for (int i = 0; i < 2; i ++) {
-        BoardLayerView layerView = BoardLayerView(size, spriteLoader);
-        addChild(&layerView);
-        _layers[i] = &layerView;
-    }
     
 //    View *animationTest = new View();
 //    animationTest->transform()->setLocalPosition(glm::vec2(50,50));
@@ -80,34 +78,33 @@ BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : 
 }
 
 BoardView::~BoardView() {
-    _layers.clear();
-}
-
-void BoardView::addCell(CellDataModel cell, BoardLayer layer) {
     
 }
 
-void BoardView::removeCell(CellDataModel cell, BoardLayer layer) {
+void BoardView::addCell(const CellDataModel& cell, const BoardLayer& layer) {
+    
+}
+
+void BoardView::removeCell(const CellDataModel& cell, const BoardLayer& layer) {
     
 }
 
 #pragma mark Events
 
-void BoardView::onCellAdded(CellDataModel cell) {
+void BoardView::onCellAdded(const CellDataModel& cell) {
     
 }
 
-void BoardView::onCellRemoved(GridLocation location) {
+void BoardView::onCellRemoved(const GridLocation& location) {
     
 }
 
-void BoardView::onBlueprintAdded(GridLocation origin, BlueprintDataModel blueprint) {
-    BoardLayerView *layer = _layers.at(Boardlayer_Blueprint);
+void BoardView::onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint) {
     
-    std::vector<CellDataModel>::iterator iter = blueprint.cells.begin();
+    std::vector<CellDataModel>::const_iterator iter = blueprint.cells.begin();
     for (; iter != blueprint.cells.end(); iter++) {
         CellDataModel cell = (*iter);
         cell.location += origin;
-        layer->addCell(cell);
+        _layerBlueprint.addCell(cell);
     }
 }

@@ -29,7 +29,7 @@ View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,
 
 View::View(glm::vec2 position, glm::vec2 size) :
 _renderer(ViewRenderer(COLOR_RED)),
-_transform(Transform(position,size)),
+_transform(position,size),
 _responder(_transform),
 _screenManager(ScreenManager::instance()) {
     refreshRendererMatrix();
