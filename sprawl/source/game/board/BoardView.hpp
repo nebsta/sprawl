@@ -21,7 +21,7 @@
 #define BOARDVIEW_DEFAULT_SIZE glm::vec2(300,550)
 
 typedef enum BoardLayer {
-    Boardlayer_Blueprint,
+    BoardLayer_Blueprint,
     BoardLayer_Blocks
 } BoardLayer;
 
@@ -40,8 +40,9 @@ public:
     void onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint);
     
 private:
-    std *_layerBlueprint;
-    View *_layerBlocks;
+    std::map<int,BoardLayerView*> _layers;
+    
+    void buildLayerView(const BoardLayer &layer, const SpriteLoader& spriteLoader);
 };
 
 #endif /* BoardView_hpp */

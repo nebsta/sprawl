@@ -8,9 +8,7 @@
 
 #include "BoardView.hpp"
 
-BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE)//,
-//_layerBlueprint(transform().size(), spriteLoader),
-//_layerBlocks(transform().size(), spriteLoader)
+BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE)
 {
     model.setListener(this);
     
@@ -18,8 +16,8 @@ BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : 
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform().setLocalPosition(boardPosition);
     
-    _layerBlueprint =
-    
+    buildLayerView(BoardLayer_Blueprint, spriteLoader);
+    buildLayerView(BoardLayer_Blocks, spriteLoader);
     
 //    View *animationTest = new View();
 //    animationTest->transform()->setLocalPosition(glm::vec2(50,50));
@@ -83,8 +81,14 @@ BoardView::~BoardView() {
     
 }
 
+void BoardView::buildLayerView(const BoardLayer &layer, const SpriteLoader& spriteLoader) {
+    BoardLayerView *view = new BoardLayerView(transform().size(), spriteLoader);
+    addChild(view);
+    _layers[layer] = view;
+}
+
 void BoardView::addCell(const CellDataModel& cell, const BoardLayer& layer) {
-    
+    _layers.at(layer)->addCell(cell);
 }
 
 void BoardView::removeCell(const CellDataModel& cell, const BoardLayer& layer) {
@@ -107,6 +111,6 @@ void BoardView::onBlueprintAdded(const GridLocation& origin, const BlueprintData
     for (; iter != blueprint.cells.end(); iter++) {
         CellDataModel cell = (*iter);
         cell.location += origin;
-        _layerBlueprint.addCell(cell);
+        addCell(cell, BoardLayer_Blueprint);
     }
 }

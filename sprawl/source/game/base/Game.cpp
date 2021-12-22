@@ -18,8 +18,8 @@ _spriteLoader(spriteLoader) {
     BoardView *_boardView = new BoardView(_boardDataModel, spriteLoader);
     _mainView.addChild(_boardView);
     
-//    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
-//    _boardDataModel.addBlueprint(blueprint);
+    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
+    _boardDataModel.addBlueprint(blueprint);
 }
 
 Game::~Game() {
