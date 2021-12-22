@@ -20,7 +20,17 @@ ImageView::ImageView(const Sprite& sprite, const glm::vec2& position) : ImageVie
     
 }
 
-ImageView::ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size) : View(position, size, new ImageViewRenderer(sprite)) {
+ImageView::ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size) : ImageView(sprite, position, size, IMAGEVIEW_DEFAULT_COLOR) {
+    
+}
+
+ImageView::ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size, const glm::vec4& tint) : ImageView(position, size, new ImageViewRenderer(sprite, tint))
+{
+    
+}
+
+ImageView::ImageView(const glm::vec2& position, const glm::vec2& size, Renderer *renderer) : View(position, size, renderer)
+{
     
 }
 

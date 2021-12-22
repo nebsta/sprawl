@@ -20,6 +20,10 @@ ImageViewRenderer::ImageViewRenderer(const Sprite& sprite) : ImageViewRenderer(I
     
 }
 
+ImageViewRenderer::ImageViewRenderer(const Sprite& sprite, const glm::vec4& tint) : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE, sprite, tint) {
+    
+}
+
 ImageViewRenderer::ImageViewRenderer(const Mesh& shape, const Sprite& sprite) : ImageViewRenderer(shape,sprite,IMAGEVIEW_RENDERER_DEFAULT_COLOR) {
     
 }

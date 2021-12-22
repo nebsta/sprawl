@@ -33,9 +33,10 @@ class View : public Object {
     
 public:
     View();
-    View(glm::vec2 position);
-    View(glm::vec2 position, glm::vec2 size, glm::vec4 color);
-    View(glm::vec2 position, glm::vec2 size);
+    View(const glm::vec2& position);
+    View(const glm::vec2& position, const glm::vec2& size);
+    View(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
+    View(const glm::vec2& position, const glm::vec2& size, Renderer* renderer);
     
     ~View();
     

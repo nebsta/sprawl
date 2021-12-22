@@ -18,6 +18,8 @@ BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : 
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform().setLocalPosition(boardPosition);
     
+    _layerBlueprint =
+    
     
 //    View *animationTest = new View();
 //    animationTest->transform()->setLocalPosition(glm::vec2(50,50));
@@ -101,10 +103,10 @@ void BoardView::onCellRemoved(const GridLocation& location) {
 
 void BoardView::onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint) {
     
-//    std::vector<CellDataModel>::const_iterator iter = blueprint.cells.begin();
-//    for (; iter != blueprint.cells.end(); iter++) {
-//        CellDataModel cell = (*iter);
-//        cell.location += origin;
-//        _layerBlueprint.addCell(cell);
-//    }
+    std::vector<CellDataModel>::const_iterator iter = blueprint.cells.begin();
+    for (; iter != blueprint.cells.end(); iter++) {
+        CellDataModel cell = (*iter);
+        cell.location += origin;
+        _layerBlueprint.addCell(cell);
+    }
 }

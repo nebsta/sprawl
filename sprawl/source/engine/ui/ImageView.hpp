@@ -17,7 +17,7 @@
 #include "ImageViewRenderer.hpp"
 
 #define IMAGEVIEW_DEFAULT_POSITION VECTOR_EMPTY
-#define IMAGEVIEW_DEFAULT_SHAPE 
+#define IMAGEVIEW_DEFAULT_COLOR COLOR_WHITE
 
 class ImageView : public View {
     
@@ -26,6 +26,8 @@ public:
     ImageView(const Sprite& sprite);
     ImageView(const Sprite& sprite, const glm::vec2& position);
     ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size);
+    ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size, const glm::vec4& tint);
+    ImageView(const glm::vec2& position, const glm::vec2& size, Renderer *renderer);
     ~ImageView();
     
     void setSprite(Sprite sprite);

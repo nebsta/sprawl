@@ -14,19 +14,23 @@ View::View() : View(VIEW_DEFAULT_POSITION) {
     
 }
 
-View::View(glm::vec2 position) : View(position,VIEW_DEFAULT_SIZE) {
+View::View(const glm::vec2& position) : View(position,VIEW_DEFAULT_SIZE) {
     
 }
 
-View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size)
+View::View(const glm::vec2& position, const glm::vec2& size) : View(position,size,VIEW_DEFAULT_COLOR) {
+    
+}
+
+View::View(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color) : View(position,size,new ViewRenderer(color))
 {
 
 }
 
-View::View(glm::vec2 position, glm::vec2 size) :
-_transform(position,size),
+View::View(const glm::vec2& position, const glm::vec2& size, Renderer* renderer) :
+_renderer(renderer),
+_transform(Transform(position,size)),
 _responder(_transform),
-_renderer(new ViewRenderer()),
 _screenManager(ScreenManager::instance()) {
     refreshRendererMatrix();
     refreshRendererClip();

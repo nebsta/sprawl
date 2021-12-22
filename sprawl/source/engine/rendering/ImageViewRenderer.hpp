@@ -25,6 +25,7 @@ public:
     ImageViewRenderer();
     ImageViewRenderer(const Mesh& mesh);
     ImageViewRenderer(const Sprite& sprite);
+    ImageViewRenderer(const Sprite& sprite, const glm::vec4& tint);
     ImageViewRenderer(const Mesh& mesh, const Sprite& sprite);
     ImageViewRenderer(const Mesh& mesh, const Sprite& sprite, const glm::vec4& tint);
     ~ImageViewRenderer();
