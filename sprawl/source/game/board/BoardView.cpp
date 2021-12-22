@@ -16,8 +16,8 @@ BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : 
     glm::vec2 boardPosition = glm::vec2((screenWidth()-size.x)*0.5f,screenHeight()-size.y);
     transform().setLocalPosition(boardPosition);
     
-    buildLayerView(BoardLayer_Blueprint, spriteLoader);
     buildLayerView(BoardLayer_Blocks, spriteLoader);
+    buildLayerView(BoardLayer_Blueprint, spriteLoader);
     
 //    View *animationTest = new View();
 //    animationTest->transform()->setLocalPosition(glm::vec2(50,50));
