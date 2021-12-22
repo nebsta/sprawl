@@ -16,16 +16,8 @@
 class CellView : public View {
     
 public:
-    CellView(CellDataModel model, const SpriteLoader& spriteLoader);
+    CellView(const CellDataModel& model, const SpriteLoader& spriteLoader);
     ~CellView();
-    
-    CellDataModel dataModel();
-    
-    void setTintColor(glm::vec4 tintColor);
-    
-private:
-    ImageView _imageView;
-    CellDataModel _dataModel;
 };
 
 #endif /* CellView_hpp */

@@ -18,36 +18,39 @@ View::View(glm::vec2 position) : View(position,VIEW_DEFAULT_SIZE) {
     
 }
 
-//View::View(glm::vec2 position, glm::vec2 size) : View(position,size,VIEW_DEFAULT_COLOR) {
-//    
-//}
-
 View::View(glm::vec2 position, glm::vec2 size, glm::vec4 color) : View(position,size)
 {
 
 }
 
 View::View(glm::vec2 position, glm::vec2 size) :
-_renderer(ViewRenderer(COLOR_RED)),
 _transform(position,size),
 _responder(_transform),
+_renderer(new ViewRenderer()),
 _screenManager(ScreenManager::instance()) {
     refreshRendererMatrix();
     refreshRendererClip();
 }
 
+View::~View() {
+    for (ViewIterator iter = _children.begin(); iter != _children.end(); iter++) {
+        delete *iter;
+    }
+    _children.clear();
+}
+
 void View::render() {
-    _renderer.render();
+    _renderer->render();
     
     if (!hasChildren()) {
         return;
     }
     
-    _renderer.pushClippingRect();
+    _renderer->pushClippingRect();
     for (ViewIterator iter = _children.begin(); iter != _children.end(); iter++) {
         (*iter)->render();
     }
-    _renderer.popClippingRect();
+    _renderer->popClippingRect();
 }
 
 void View::update(float dt) {
@@ -91,7 +94,7 @@ void View::consumeTransformChanges() {
 
 void View::refreshRendererMatrix() {
     glm::mat4 matrix = _transform.matrix();
-    _renderer.setModelviewMatrix(matrix);
+    _renderer->setModelviewMatrix(matrix);
     
     if (!hasChildren()) {
         return;
@@ -104,7 +107,7 @@ void View::refreshRendererMatrix() {
 
 void View::refreshRendererClip() {
     glm::vec4 rect = _transform.rect();
-    _renderer.setClippingRect(rect);
+    _renderer->setClippingRect(rect);
     
     if (!hasChildren()) {
         return;
@@ -179,12 +182,12 @@ bool View::hasChildren() const {
 
 #pragma mark Getters
 
-Transform& View::transform() {
-    return _transform;
+Renderer* View::renderer() {
+    return _renderer.get();
 }
 
-Renderer& View::renderer() {
-    return _renderer;
+Transform& View::transform() {
+    return _transform;
 }
 
 Responder& View::responder() {

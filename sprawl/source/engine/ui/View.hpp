@@ -34,9 +34,10 @@ class View : public Object {
 public:
     View();
     View(glm::vec2 position);
-//    View(glm::vec2 position, glm::vec2 size);
     View(glm::vec2 position, glm::vec2 size, glm::vec4 color);
     View(glm::vec2 position, glm::vec2 size);
+    
+    ~View();
     
     void render();
     void update(float dt);
@@ -49,17 +50,17 @@ public:
     void setOnTouchBegin(std::function<void(Touch)> callback);
     void setOnTouchEnd(std::function<void(Touch)> callback);
     
-    void addChild(View* const view);
+    void addChild(View* const child);
     void removeChild(View* const view);
     bool hasChildren() const;
     
+    Renderer* renderer();
     Transform& transform();
-    Renderer& renderer();
     Responder& responder();
     ViewAnimator& animator();
     
 protected:
-    Renderer _renderer;
+    std::unique_ptr<Renderer> _renderer;
     Transform _transform;
     ViewAnimator _animator;
     Responder _responder;

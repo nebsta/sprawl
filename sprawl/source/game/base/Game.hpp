@@ -34,7 +34,6 @@ private:
     BlueprintManager _blueprintManager;
     
     View _mainView;
-    BoardView _boardView;
     BoardDataModel _boardDataModel;
 };
 

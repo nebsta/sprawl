@@ -8,9 +8,9 @@
 
 #include "BoardView.hpp"
 
-BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE),
-_layerBlueprint(transform().size(), spriteLoader),
-_layerBlocks(transform().size(), spriteLoader)
+BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE)//,
+//_layerBlueprint(transform().size(), spriteLoader),
+//_layerBlocks(transform().size(), spriteLoader)
 {
     model.setListener(this);
     
@@ -101,10 +101,10 @@ void BoardView::onCellRemoved(const GridLocation& location) {
 
 void BoardView::onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint) {
     
-    std::vector<CellDataModel>::const_iterator iter = blueprint.cells.begin();
-    for (; iter != blueprint.cells.end(); iter++) {
-        CellDataModel cell = (*iter);
-        cell.location += origin;
-        _layerBlueprint.addCell(cell);
-    }
+//    std::vector<CellDataModel>::const_iterator iter = blueprint.cells.begin();
+//    for (; iter != blueprint.cells.end(); iter++) {
+//        CellDataModel cell = (*iter);
+//        cell.location += origin;
+//        _layerBlueprint.addCell(cell);
+//    }
 }

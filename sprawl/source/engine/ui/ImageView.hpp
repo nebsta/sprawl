@@ -23,9 +23,9 @@ class ImageView : public View {
     
 public:
     ImageView();
-    ImageView(Sprite sprite);
-    ImageView(Sprite sprite, glm::vec2 position);
-    ImageView(Sprite sprite, glm::vec2 position, glm::vec2 size);
+    ImageView(const Sprite& sprite);
+    ImageView(const Sprite& sprite, const glm::vec2& position);
+    ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size);
     ~ImageView();
     
     void setSprite(Sprite sprite);

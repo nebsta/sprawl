@@ -12,11 +12,11 @@ ViewRenderer::ViewRenderer() : ViewRenderer(VIEW_RENDERER_DEFAULT_COLOR) {
     
 }
 
-ViewRenderer::ViewRenderer(glm::vec4 tint) : ViewRenderer(VIEW_RENDERER_DEFAULT_MESH,tint) {
+ViewRenderer::ViewRenderer(const glm::vec4& tint) : ViewRenderer(VIEW_RENDERER_DEFAULT_MESH,tint) {
     
 }
 
-ViewRenderer::ViewRenderer(Mesh mesh, glm::vec4 tint) {
+ViewRenderer::ViewRenderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(mesh, tint) {
     glGenVertexArraysOES(1, &_vertexArray);
     glBindVertexArrayOES(_vertexArray);
     

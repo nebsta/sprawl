@@ -107,7 +107,6 @@
 		4352E1EB276646ED00B0E797 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		4352E1F22766476D00B0E797 /* SpriteLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteLoader.h; sourceTree = "<group>"; };
 		4352E1F32766484900B0E797 /* ScreenHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenHandler.h; sourceTree = "<group>"; };
-		4352E1F527664E4A00B0E797 /* BlueprintHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueprintHandler.h; sourceTree = "<group>"; };
 		4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test_tileset_HD.plist; path = assets/tilesets/test_tileset/test_tileset_HD.plist; sourceTree = "<group>"; };
 		4361F4601EAE561700A0CC03 /* test_tileset_HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test_tileset_HD.png; path = assets/tilesets/test_tileset/test_tileset_HD.png; sourceTree = "<group>"; };
 		437281581E9FD3BB00406630 /* AnimationCurves.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AnimationCurves.hpp; path = source/engine/animation/AnimationCurves.hpp; sourceTree = "<group>"; };
@@ -184,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				431DCDEA1C5D6547009CA06A /* BlueprintDataModel.h */,
-				4352E1F527664E4A00B0E797 /* BlueprintHandler.h */,
 			);
 			name = blueprint;
 			sourceTree = "<group>";

@@ -40,8 +40,8 @@ public:
     void onBlueprintAdded(const GridLocation& origin, const BlueprintDataModel& blueprint);
     
 private:
-    BoardLayerView _layerBlueprint;
-    BoardLayerView _layerBlocks;
+//    BoardLayerView _layerBlueprint;
+//    BoardLayerView _layerBlocks;
 };
 
 #endif /* BoardView_hpp */

@@ -12,19 +12,19 @@ ImageViewRenderer::ImageViewRenderer() : ImageViewRenderer(IMAGEVIEW_RENDERER_DE
     
 }
 
-ImageViewRenderer::ImageViewRenderer(Mesh shape) : ImageViewRenderer(shape,IMAGEVIEW_RENDERER_DEFAULT_SPRITE) {
+ImageViewRenderer::ImageViewRenderer(const Mesh& shape) : ImageViewRenderer(shape,IMAGEVIEW_RENDERER_DEFAULT_SPRITE) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(Sprite sprite) : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE,sprite) {
+ImageViewRenderer::ImageViewRenderer(const Sprite& sprite) : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE,sprite) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(Mesh shape, Sprite sprite) : ImageViewRenderer(shape,sprite,IMAGEVIEW_RENDERER_DEFAULT_COLOR) {
+ImageViewRenderer::ImageViewRenderer(const Mesh& shape, const Sprite& sprite) : ImageViewRenderer(shape,sprite,IMAGEVIEW_RENDERER_DEFAULT_COLOR) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(Mesh shape, Sprite sprite, glm::vec4 tint) : Renderer(shape,tint,IMAGEVIEW_RENDERER_DEFAULT_SHADER),
+ImageViewRenderer::ImageViewRenderer(const Mesh& shape, const Sprite& sprite, const glm::vec4& tint) : Renderer(shape,tint,IMAGEVIEW_RENDERER_DEFAULT_SHADER),
 _sprite(sprite) {
     
     refreshTextureCoords();

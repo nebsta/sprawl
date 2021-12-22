@@ -14,15 +14,15 @@ Renderer::Renderer() : Renderer(RENDERER_DEFAULT_SHAPE,RENDERER_DEFAULT_COLOR) {
     
 }
 
-Renderer::Renderer(glm::vec4 tint) : Renderer(RENDERER_DEFAULT_SHAPE,tint) {
+Renderer::Renderer(const glm::vec4& tint) : Renderer(RENDERER_DEFAULT_SHAPE,tint) {
     
 }
 
-Renderer::Renderer(Mesh mesh, glm::vec4 tint) : Renderer(RENDERER_DEFAULT_SHAPE,RENDERER_DEFAULT_COLOR,RENDERER_DEFAULT_SHADER) {
+Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(RENDERER_DEFAULT_SHAPE,RENDERER_DEFAULT_COLOR,RENDERER_DEFAULT_SHADER) {
     
 }
 
-Renderer::Renderer(Mesh mesh, glm::vec4 tint, std::string shader) :
+Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader) :
 _vertexArray(0),
 _vertexBuffer(0),
 _mesh(mesh),
@@ -39,14 +39,9 @@ _clipChildren(true) {
 }
 
 Renderer::~Renderer() {
-    Logger::logMessage("Destroy");
-}
-
-void Renderer::cleanup() {
     glDeleteBuffers(1, &_vertexBuffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
 }
-
 
 void Renderer::render() {
     
@@ -88,23 +83,23 @@ void Renderer::popClippingRect() {
 
 #pragma mark Setters
 
-void Renderer::setModelviewMatrix(glm::mat4 matrix) {
+void Renderer::setModelviewMatrix(const glm::mat4& matrix) {
     _modelviewMatrix = matrix;
 }
 
-void Renderer::setProjectionMatrix(glm::mat4 matrix) {
+void Renderer::setProjectionMatrix(const glm::mat4& matrix) {
     _projectionMatrix = matrix;
 }
 
-void Renderer::setTint(glm::vec4 tint) {
+void Renderer::setTint(const glm::vec4& tint) {
     _tint = tint;
 }
 
-void Renderer::setClippingRect(glm::vec4 clippingRect) {
+void Renderer::setClippingRect(const glm::vec4& clippingRect) {
     _clippingRect = clippingRect;
 }
 
-void Renderer::setClipChildren(bool clipChildren) {
+void Renderer::setClipChildren(const bool& clipChildren) {
     _clipChildren = clipChildren;
 }
 

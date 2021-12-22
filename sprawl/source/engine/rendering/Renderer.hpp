@@ -60,22 +60,21 @@ private:
     
 public:
     Renderer();
-    Renderer(glm::vec4 tint);
-    Renderer(Mesh mesh, glm::vec4 tint);
-    Renderer(Mesh mesh, glm::vec4 tint, std::string shader);
+    Renderer(const glm::vec4& tint);
+    Renderer(const Mesh& mesh, const glm::vec4& tint);
+    Renderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader);
     ~Renderer();
     
-    void cleanup();
     void render();
     
     void pushClippingRect();
     void popClippingRect();
     
-    void setModelviewMatrix(glm::mat4 matrix);
-    void setProjectionMatrix(glm::mat4 matrix);
-    void setTint(glm::vec4 tint);
-    void setClipChildren(bool clipChildren);
-    void setClippingRect(glm::vec4 clippingRect);
+    void setModelviewMatrix(const glm::mat4& matrix);
+    void setProjectionMatrix(const glm::mat4& matrix);
+    void setTint(const glm::vec4& tint);
+    void setClipChildren(const bool& clipChildren);
+    void setClippingRect(const glm::vec4& clippingRect);
     
 protected:
     std::string _shader;

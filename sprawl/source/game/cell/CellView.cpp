@@ -8,23 +8,12 @@
 
 #include "CellView.hpp"
 
-CellView::CellView(CellDataModel model, const SpriteLoader& spriteLoader) :
-_dataModel(model),
-_imageView(spriteForType(spriteLoader, model.type)) {
+CellView::CellView(const CellDataModel& model, const SpriteLoader& spriteLoader) {
     
-    _imageView.transform().setSize(glm::vec2(50,50));
-    addChild(&_imageView);
+    ImageView *imageView = new ImageView(spriteForType(spriteLoader, model.type));
+    imageView->transform().setSize(glm::vec2(50,50));
+    addChild(imageView);
 }
 
 CellView::~CellView() {
-}
-
-#pragma mark Getters
-
-CellDataModel CellView::dataModel() {
-    return _dataModel;
-}
-
-void CellView::setTintColor(glm::vec4 tintColor) {
-    _imageView.renderer().setTint(tintColor);
 }

@@ -17,8 +17,8 @@
 class ViewRenderer : public Renderer {
 public:
     ViewRenderer();
-    ViewRenderer(glm::vec4 tint);
-    ViewRenderer(Mesh mesh, glm::vec4 tint);
+    ViewRenderer(const glm::vec4& tint);
+    ViewRenderer(const Mesh& mesh, const glm::vec4& tint);
     ~ViewRenderer();
     
 private:

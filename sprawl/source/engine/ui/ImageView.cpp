@@ -12,15 +12,15 @@ ImageView::ImageView() : ImageView(SpriteEmpty) {
     
 }
 
-ImageView::ImageView(Sprite sprite) : ImageView(sprite,IMAGEVIEW_DEFAULT_POSITION) {
+ImageView::ImageView(const Sprite& sprite) : ImageView(sprite,IMAGEVIEW_DEFAULT_POSITION) {
     
 }
 
-ImageView::ImageView(Sprite sprite, glm::vec2 position) : ImageView(sprite,position,glm::vec2(sprite.texture.width,sprite.texture.height)) {
+ImageView::ImageView(const Sprite& sprite, const glm::vec2& position) : ImageView(sprite,position,glm::vec2(sprite.texture.width,sprite.texture.height)) {
     
 }
 
-ImageView::ImageView(Sprite sprite, glm::vec2 position, glm::vec2 size) { //: View(position, size, ImageViewRenderer(sprite)) {
+ImageView::ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size) : View(position, size, new ImageViewRenderer(sprite)) {
     
 }
 
@@ -31,7 +31,6 @@ ImageView::~ImageView() {
 #pragma mark Setters
 
 void ImageView::setSprite(Sprite sprite) {
-    
     ImageViewRenderer renderer = (ImageViewRenderer&)_renderer;
     renderer.setSprite(sprite);
     
