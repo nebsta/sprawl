@@ -20,9 +20,7 @@ OGLRenderer::OGLRenderer(const Mesh& mesh, const glm::vec4& tint) : OGLRenderer(
     
 }
 
-OGLRenderer::OGLRenderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader) : Renderer(mesh, tint, shader),
-_vertexArray(0),
-_vertexBuffer(0) {
+OGLRenderer::OGLRenderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader) : Renderer(mesh, tint, shader) {
     
     _shaderProgram = ShaderManager::instance().getProgram(_shader);
     _tintId = ShaderManager::instance().getUniformId(_shader,Uniform_ColorTint);

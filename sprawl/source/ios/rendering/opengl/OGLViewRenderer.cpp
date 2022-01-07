@@ -8,7 +8,7 @@
 
 #include "OGLViewRenderer.hpp"
 
-OGLViewRenderer::OGLViewRenderer(const glm::vec4& tint) : OGLRenderer(RENDERER_DEFAULT_SHAPE, tint) {
+OGLViewRenderer::OGLViewRenderer(const glm::vec4& tint) : OGLViewRenderer(RENDERER_DEFAULT_SHAPE, tint) {
     
 }
 
