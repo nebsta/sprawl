@@ -61,8 +61,8 @@ public:
     
     void render();
     
-    void pushClippingRect();
-    void popClippingRect();
+    virtual void pushClippingRect();
+    virtual void popClippingRect();
     
     void setModelviewMatrix(const glm::mat4& matrix);
     void setProjectionMatrix(const glm::mat4& matrix);

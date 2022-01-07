@@ -49,3 +49,23 @@ void OGLRenderer::draw() {
     glDrawArrays(GL_TRIANGLE_STRIP, 0, _mesh.vertexCount);
     glBindVertexArrayOES(0);
 }
+
+#pragma mark Clipping
+
+void OGLRenderer::pushClippingRect() {
+    if (!_clipChildren) {
+        return;
+    }
+    
+    // save a copy of the current clipping plan and applying our own clipping
+    glGetIntegerv(GL_SCISSOR_BOX, _parentScissorRect);
+    glScissor(_clippingRect.x, _clippingRect.y, _clippingRect.z, _clippingRect.w);
+}
+
+void OGLRenderer::popClippingRect() {
+    if (!_clipChildren) {
+        return;
+    }
+    
+    glScissor(_parentScissorRect[0], _parentScissorRect[1], _parentScissorRect[2], _parentScissorRect[3]);
+}

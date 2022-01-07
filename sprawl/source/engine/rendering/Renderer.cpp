@@ -25,7 +25,7 @@ Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(mesh, tin
 Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader) :
 _mesh(mesh),
 _tint(tint),
-_modelviewMatrix(glm::mat4()),
+_modelviewMatrix(),
 _projectionMatrix(RENDERER_DEFAULT_PROJECTION),
 _shader(shader),
 _clipChildren(true) {
@@ -44,21 +44,11 @@ void Renderer::render() {
 #pragma mark Clipping
 
 void Renderer::pushClippingRect() {
-    if (!_clipChildren) {
-        return;
-    }
     
-    // save a copy of the current clipping plan and applying our own clipping
-    glGetIntegerv(GL_SCISSOR_BOX, _parentScissorRect);
-    glScissor(_clippingRect.x, _clippingRect.y, _clippingRect.z, _clippingRect.w);
 }
 
 void Renderer::popClippingRect() {
-    if (!_clipChildren) {
-        return;
-    }
     
-    glScissor(_parentScissorRect[0], _parentScissorRect[1], _parentScissorRect[2], _parentScissorRect[3]);
 }
 
 #pragma mark Setters

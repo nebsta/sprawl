@@ -12,7 +12,7 @@ static MemoryProfiler profiler;
 
 void* operator new(size_t size) {
     
-    std::cout << "Allocating " << size << " bytes\n";
+//    std::cout << "Allocating " << size << " bytes\n";
     profiler.memoryAllocated(size);
     
     return malloc(size);
@@ -20,7 +20,7 @@ void* operator new(size_t size) {
 
 void operator delete(void* memory, size_t size) {
     
-    std::cout << "Freeing " << size << " bytes\n";
+//    std::cout << "Freeing " << size << " bytes\n";
     profiler.memoryFreed(size);
     
     free(memory);

@@ -20,6 +20,10 @@ public:
     OGLRenderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader);
     ~OGLRenderer();
     
+    
+    void pushClippingRect();
+    void popClippingRect();
+    
 private:
     GLuint _shaderProgram;
     GLuint _tintId;
