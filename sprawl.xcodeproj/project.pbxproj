@@ -34,6 +34,8 @@
 		4352E1ED276646ED00B0E797 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1EA276646ED00B0E797 /* AppDelegate.mm */; };
 		4361F4611EAE561700A0CC03 /* test_tileset_HD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */; };
 		4361F4621EAE561700A0CC03 /* test_tileset_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 4361F4601EAE561700A0CC03 /* test_tileset_HD.png */; };
+		43809F8A2788E39F00376332 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43809F892788E39F00376332 /* Metal.framework */; };
+		43809F8C2788E3A200376332 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43809F8B2788E3A200376332 /* QuartzCore.framework */; };
 		43815BE121FCD45A00EC86C5 /* ScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */; };
 		4385637C1C58147D00246A70 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4385637B1C58147D00246A70 /* Message.cpp */; };
 		43A10D281C4BD27100F4A2E2 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */; };
@@ -51,14 +53,55 @@
 		43EDA6941C4176A900FE7F8F /* BoardDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6931C4176A900FE7F8F /* BoardDataModel.cpp */; };
 		43EDA6A61C417FD200FE7F8F /* CellView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6A41C417FD200FE7F8F /* CellView.cpp */; };
 		43F28E291BF79B4F003E86B7 /* Responder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F28E271BF79B4F003E86B7 /* Responder.cpp */; };
+		43F956C12788DE85003C9C40 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1E8276646ED00B0E797 /* RootViewController.mm */; };
+		43F956C22788DE85003C9C40 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756DC2788A6DC00F6946F /* Graphics.cpp */; };
+		43F956C32788DE85003C9C40 /* ScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */; };
+		43F956C42788DE85003C9C40 /* BoardView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AFE1761C38C72A00B5A303 /* BoardView.cpp */; };
+		43F956C52788DE85003C9C40 /* SpriteManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */; };
+		43F956C62788DE85003C9C40 /* AnimationCurves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E63F501EADD3370048286E /* AnimationCurves.cpp */; };
+		43F956C72788DE85003C9C40 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C2A1BEF86BC00A7128E /* Transform.cpp */; };
+		43F956C82788DE85003C9C40 /* Animator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C0E1BEF84D500A7128E /* Animator.cpp */; };
+		43F956C92788DE85003C9C40 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4329CA621BEFF5E600F18459 /* Renderer.cpp */; };
+		43F956CA2788DE85003C9C40 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1EA276646ED00B0E797 /* AppDelegate.mm */; };
+		43F956CB2788DE85003C9C40 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4343C9E51C425D2B006FED90 /* Button.cpp */; };
+		43F956CC2788DE85003C9C40 /* CellView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6A41C417FD200FE7F8F /* CellView.cpp */; };
+		43F956CD2788DE85003C9C40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CC37C21BC17761009F3FD0 /* main.m */; };
+		43F956CE2788DE85003C9C40 /* MemoryProfiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FAACE527879E7500B300BF /* MemoryProfiler.cpp */; };
+		43F956CF2788DE85003C9C40 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C141BEF84E400A7128E /* Object.cpp */; };
+		43F956D02788DE85003C9C40 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C2C1BEF86BC00A7128E /* View.cpp */; };
+		43F956D12788DE85003C9C40 /* ViewAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C101BEF84D500A7128E /* ViewAnimator.cpp */; };
+		43F956D22788DE85003C9C40 /* BlueprintManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */; };
+		43F956D32788DE85003C9C40 /* BoardLayerView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */; };
+		43F956D42788DE85003C9C40 /* MessageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C1A1BEF868800A7128E /* MessageManager.cpp */; };
+		43F956D52788DE85003C9C40 /* BoardInputView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FFDA4D1C829FBA000BFB25 /* BoardInputView.cpp */; };
+		43F956D62788DE85003C9C40 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4385637B1C58147D00246A70 /* Message.cpp */; };
+		43F956D72788DE85003C9C40 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1DB2766390500B0E797 /* Game.cpp */; };
+		43F956D82788DE85003C9C40 /* Logger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C381BEF86D600A7128E /* Logger.mm */; };
+		43F956DA2788DE85003C9C40 /* BoardDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6931C4176A900FE7F8F /* BoardDataModel.cpp */; };
+		43F956DB2788DE85003C9C40 /* Responder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F28E271BF79B4F003E86B7 /* Responder.cpp */; };
+		43F956DD2788DE85003C9C40 /* ImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C241BEF86BC00A7128E /* ImageView.cpp */; };
+		43F956DE2788DE85003C9C40 /* ShaderManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C1E1BEF869D00A7128E /* ShaderManager.mm */; };
+		43F956E52788DE85003C9C40 /* main_tileset_hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 430A3BDC1BEF77A200A7128E /* main_tileset_hd.plist */; };
+		43F956E62788DE85003C9C40 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431F25FE1C42C34F0064BF81 /* shader_config.plist */; };
+		43F956E72788DE85003C9C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D11BC17869009F3FD0 /* Main.storyboard */; };
+		43F956E82788DE85003C9C40 /* ImageViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */; };
+		43F956E92788DE85003C9C40 /* main_tileset_hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 430A3BDD1BEF77A200A7128E /* main_tileset_hd.png */; };
+		43F956EA2788DE85003C9C40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D91BC178C6009F3FD0 /* Images.xcassets */; };
+		43F956EB2788DE85003C9C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */; };
+		43F956EC2788DE85003C9C40 /* example_blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 431DCDEC1C5D665E009CA06A /* example_blueprint.json */; };
+		43F956ED2788DE85003C9C40 /* ViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */; };
+		43F956EE2788DE85003C9C40 /* ImageViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */; };
+		43F956EF2788DE85003C9C40 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */; };
+		43F956F02788DE85003C9C40 /* test_tileset_HD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */; };
+		43F956F12788DE85003C9C40 /* test_tileset_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 4361F4601EAE561700A0CC03 /* test_tileset_HD.png */; };
 		43FAACE727879E7500B300BF /* MemoryProfiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FAACE527879E7500B300BF /* MemoryProfiler.cpp */; };
 		43FFDA4F1C829FBA000BFB25 /* BoardInputView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FFDA4D1C829FBA000BFB25 /* BoardInputView.cpp */; };
 		58E63F511EADD3370048286E /* AnimationCurves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E63F501EADD3370048286E /* AnimationCurves.cpp */; };
-		EDBBA2C5630B3F872DBEB733 /* Pods_sprawl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A440479EE88AB733C4B9A25 /* Pods_sprawl.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D462B84847304BC28B9B007 /* Pods-sprawl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprawl/Pods-sprawl.debug.xcconfig"; sourceTree = "<group>"; };
+		0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.release.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.release.xcconfig"; sourceTree = "<group>"; };
+		08B10253B94B230317C9CFEB /* Pods_sprawl_opengl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_opengl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430A3BDC1BEF77A200A7128E /* main_tileset_hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = main_tileset_hd.plist; path = assets/tilesets/main_tileset_hd.plist; sourceTree = "<group>"; };
 		430A3BDD1BEF77A200A7128E /* main_tileset_hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_tileset_hd.png; path = assets/tilesets/main_tileset_hd.png; sourceTree = "<group>"; };
 		430A3BF71BEF845600A7128E /* BoardDataModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardDataModel.hpp; path = source/game/board/BoardDataModel.hpp; sourceTree = "<group>"; };
@@ -116,6 +159,8 @@
 		4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test_tileset_HD.plist; path = assets/tilesets/test_tileset/test_tileset_HD.plist; sourceTree = "<group>"; };
 		4361F4601EAE561700A0CC03 /* test_tileset_HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test_tileset_HD.png; path = assets/tilesets/test_tileset/test_tileset_HD.png; sourceTree = "<group>"; };
 		437281581E9FD3BB00406630 /* AnimationCurves.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AnimationCurves.hpp; path = source/engine/animation/AnimationCurves.hpp; sourceTree = "<group>"; };
+		43809F892788E39F00376332 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		43809F8B2788E3A200376332 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenManager.cpp; sourceTree = "<group>"; };
 		43815BE021FCD45A00EC86C5 /* ScreenManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScreenManager.hpp; sourceTree = "<group>"; };
 		4385637B1C58147D00246A70 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Message.cpp; path = source/engine/message/Message.cpp; sourceTree = "<group>"; };
@@ -126,7 +171,7 @@
 		43AFE1771C38C72A00B5A303 /* BoardView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardView.hpp; path = source/game/board/BoardView.hpp; sourceTree = "<group>"; };
 		43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.fsh; path = assets/shaders/ImageViewShader.fsh; sourceTree = "<group>"; };
 		43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.vsh; path = assets/shaders/ImageViewShader.vsh; sourceTree = "<group>"; };
-		43CC37901BC17594009F3FD0 /* sprawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CC37901BC17594009F3FD0 /* sprawl_opengl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_opengl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CC37C21BC17761009F3FD0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
 		43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = xib/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43CC37D11BC17869009F3FD0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = xib/Main.storyboard; sourceTree = "<group>"; };
@@ -142,13 +187,17 @@
 		43F28E271BF79B4F003E86B7 /* Responder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Responder.cpp; path = source/engine/input/Responder.cpp; sourceTree = "<group>"; };
 		43F28E281BF79B4F003E86B7 /* Responder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Responder.hpp; path = source/engine/input/Responder.hpp; sourceTree = "<group>"; };
 		43F28E2A1BF8EC13003E86B7 /* Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
+		43F956F72788DE85003C9C40 /* sprawl_metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_metal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F956F82788DE85003C9C40 /* sprawl_opengl copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "sprawl_opengl copy-Info.plist"; path = "/Users/benjamin/Repos/sprawl/sprawl_opengl copy-Info.plist"; sourceTree = "<absolute>"; };
 		43FAACE527879E7500B300BF /* MemoryProfiler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryProfiler.cpp; path = source/engine/util/MemoryProfiler.cpp; sourceTree = "<group>"; };
 		43FAACE627879E7500B300BF /* MemoryProfiler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MemoryProfiler.hpp; path = source/engine/util/MemoryProfiler.hpp; sourceTree = "<group>"; };
 		43FFDA4D1C829FBA000BFB25 /* BoardInputView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardInputView.cpp; path = source/game/input/BoardInputView.cpp; sourceTree = "<group>"; };
 		43FFDA4E1C829FBA000BFB25 /* BoardInputView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardInputView.hpp; path = source/game/input/BoardInputView.hpp; sourceTree = "<group>"; };
+		4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.debug.xcconfig"; sourceTree = "<group>"; };
 		58E63F501EADD3370048286E /* AnimationCurves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationCurves.cpp; path = source/engine/animation/AnimationCurves.cpp; sourceTree = "<group>"; };
-		8A440479EE88AB733C4B9A25 /* Pods_sprawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3A9CA73EB1728A151AFB8B7 /* Pods-sprawl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprawl/Pods-sprawl.release.xcconfig"; sourceTree = "<group>"; };
+		6AA1A674D826AEAE0B5F8C29 /* Pods_sprawl_metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.debug.xcconfig"; sourceTree = "<group>"; };
+		75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.release.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +208,15 @@
 				43CC37E41BC1800B009F3FD0 /* UIKit.framework in Frameworks */,
 				43CC37E21BC17FFA009F3FD0 /* OpenGLES.framework in Frameworks */,
 				43CC37E01BC17FDA009F3FD0 /* GLKit.framework in Frameworks */,
-				EDBBA2C5630B3F872DBEB733 /* Pods_sprawl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F956DF2788DE85003C9C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43809F8C2788E3A200376332 /* QuartzCore.framework in Frameworks */,
+				43809F8A2788E39F00376332 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +509,16 @@
 				43CC37921BC17594009F3FD0 /* sprawl */,
 				43CC37E51BC18022009F3FD0 /* Frameworks */,
 				43CC37911BC17594009F3FD0 /* Products */,
-				DA68654E140F7A9EC8F41F1B /* Pods */,
+				43F956F82788DE85003C9C40 /* sprawl_opengl copy-Info.plist */,
+				B88C4610C3A4DF1E9AFEFC27 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		43CC37911BC17594009F3FD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43CC37901BC17594009F3FD0 /* sprawl.app */,
+				43CC37901BC17594009F3FD0 /* sprawl_opengl.app */,
+				43F956F72788DE85003C9C40 /* sprawl_metal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -507,10 +566,13 @@
 		43CC37E51BC18022009F3FD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43809F8B2788E3A200376332 /* QuartzCore.framework */,
+				43809F892788E39F00376332 /* Metal.framework */,
 				43CC37E31BC1800B009F3FD0 /* UIKit.framework */,
 				43CC37E11BC17FFA009F3FD0 /* OpenGLES.framework */,
 				43CC37DF1BC17FDA009F3FD0 /* GLKit.framework */,
-				8A440479EE88AB733C4B9A25 /* Pods_sprawl.framework */,
+				6AA1A674D826AEAE0B5F8C29 /* Pods_sprawl_metal.framework */,
+				08B10253B94B230317C9CFEB /* Pods_sprawl_opengl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,36 +613,54 @@
 			name = input;
 			sourceTree = "<group>";
 		};
-		DA68654E140F7A9EC8F41F1B /* Pods */ = {
+		B88C4610C3A4DF1E9AFEFC27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3D462B84847304BC28B9B007 /* Pods-sprawl.debug.xcconfig */,
-				B3A9CA73EB1728A151AFB8B7 /* Pods-sprawl.release.xcconfig */,
+				4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */,
+				75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */,
+				72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */,
+				0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43CC378F1BC17594009F3FD0 /* sprawl */ = {
+		43CC378F1BC17594009F3FD0 /* sprawl_opengl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43CC37AB1BC17594009F3FD0 /* Build configuration list for PBXNativeTarget "sprawl" */;
+			buildConfigurationList = 43CC37AB1BC17594009F3FD0 /* Build configuration list for PBXNativeTarget "sprawl_opengl" */;
 			buildPhases = (
-				7B3BF63428056AB005E929F1 /* Check Pods Manifest.lock */,
+				7990CA7226163BE30BDE691E /* [CP] Check Pods Manifest.lock */,
 				43CC378C1BC17594009F3FD0 /* Sources */,
 				43CC378D1BC17594009F3FD0 /* Frameworks */,
 				43CC378E1BC17594009F3FD0 /* Resources */,
-				E2FA1F8311637CCE06AC3D53 /* Embed Pods Frameworks */,
-				C5BCEA6F909EE4371E9C7014 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = sprawl;
+			name = sprawl_opengl;
 			productName = sprawl;
-			productReference = 43CC37901BC17594009F3FD0 /* sprawl.app */;
+			productReference = 43CC37901BC17594009F3FD0 /* sprawl_opengl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43F956BD2788DE85003C9C40 /* sprawl_metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43F956F42788DE85003C9C40 /* Build configuration list for PBXNativeTarget "sprawl_metal" */;
+			buildPhases = (
+				EE4BAFADA300CF5FA856C04E /* [CP] Check Pods Manifest.lock */,
+				43F956BF2788DE85003C9C40 /* Sources */,
+				43F956DF2788DE85003C9C40 /* Frameworks */,
+				43F956E42788DE85003C9C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sprawl_metal;
+			productName = sprawl;
+			productReference = 43F956F72788DE85003C9C40 /* sprawl_metal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -610,7 +690,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43CC378F1BC17594009F3FD0 /* sprawl */,
+				43CC378F1BC17594009F3FD0 /* sprawl_opengl */,
+				43F956BD2788DE85003C9C40 /* sprawl_metal */,
 			);
 		};
 /* End PBXProject section */
@@ -636,52 +717,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43F956E42788DE85003C9C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F956E52788DE85003C9C40 /* main_tileset_hd.plist in Resources */,
+				43F956E62788DE85003C9C40 /* shader_config.plist in Resources */,
+				43F956E72788DE85003C9C40 /* Main.storyboard in Resources */,
+				43F956E82788DE85003C9C40 /* ImageViewShader.vsh in Resources */,
+				43F956E92788DE85003C9C40 /* main_tileset_hd.png in Resources */,
+				43F956EA2788DE85003C9C40 /* Images.xcassets in Resources */,
+				43F956EB2788DE85003C9C40 /* LaunchScreen.storyboard in Resources */,
+				43F956EC2788DE85003C9C40 /* example_blueprint.json in Resources */,
+				43F956ED2788DE85003C9C40 /* ViewShader.vsh in Resources */,
+				43F956EE2788DE85003C9C40 /* ImageViewShader.fsh in Resources */,
+				43F956EF2788DE85003C9C40 /* ViewShader.fsh in Resources */,
+				43F956F02788DE85003C9C40 /* test_tileset_HD.plist in Resources */,
+				43F956F12788DE85003C9C40 /* test_tileset_HD.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B3BF63428056AB005E929F1 /* Check Pods Manifest.lock */ = {
+		7990CA7226163BE30BDE691E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sprawl_opengl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5BCEA6F909EE4371E9C7014 /* Copy Pods Resources */ = {
+		EE4BAFADA300CF5FA856C04E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sprawl_metal-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sprawl/Pods-sprawl-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2FA1F8311637CCE06AC3D53 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sprawl/Pods-sprawl-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -722,6 +822,41 @@
 				431756D3278894F600F6946F /* OGLRenderer.cpp in Sources */,
 				430A3C2E1BEF86BC00A7128E /* ImageView.cpp in Sources */,
 				430A3C1F1BEF869D00A7128E /* ShaderManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F956BF2788DE85003C9C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F956C12788DE85003C9C40 /* RootViewController.mm in Sources */,
+				43F956C22788DE85003C9C40 /* Graphics.cpp in Sources */,
+				43F956C32788DE85003C9C40 /* ScreenManager.cpp in Sources */,
+				43F956C42788DE85003C9C40 /* BoardView.cpp in Sources */,
+				43F956C52788DE85003C9C40 /* SpriteManager.mm in Sources */,
+				43F956C62788DE85003C9C40 /* AnimationCurves.cpp in Sources */,
+				43F956C72788DE85003C9C40 /* Transform.cpp in Sources */,
+				43F956C82788DE85003C9C40 /* Animator.cpp in Sources */,
+				43F956C92788DE85003C9C40 /* Renderer.cpp in Sources */,
+				43F956CA2788DE85003C9C40 /* AppDelegate.mm in Sources */,
+				43F956CB2788DE85003C9C40 /* Button.cpp in Sources */,
+				43F956CC2788DE85003C9C40 /* CellView.cpp in Sources */,
+				43F956CD2788DE85003C9C40 /* main.m in Sources */,
+				43F956CE2788DE85003C9C40 /* MemoryProfiler.cpp in Sources */,
+				43F956CF2788DE85003C9C40 /* Object.cpp in Sources */,
+				43F956D02788DE85003C9C40 /* View.cpp in Sources */,
+				43F956D12788DE85003C9C40 /* ViewAnimator.cpp in Sources */,
+				43F956D22788DE85003C9C40 /* BlueprintManager.mm in Sources */,
+				43F956D32788DE85003C9C40 /* BoardLayerView.cpp in Sources */,
+				43F956D42788DE85003C9C40 /* MessageManager.cpp in Sources */,
+				43F956D52788DE85003C9C40 /* BoardInputView.cpp in Sources */,
+				43F956D62788DE85003C9C40 /* Message.cpp in Sources */,
+				43F956D72788DE85003C9C40 /* Game.cpp in Sources */,
+				43F956D82788DE85003C9C40 /* Logger.mm in Sources */,
+				43F956DA2788DE85003C9C40 /* BoardDataModel.cpp in Sources */,
+				43F956DB2788DE85003C9C40 /* Responder.cpp in Sources */,
+				43F956DD2788DE85003C9C40 /* ImageView.cpp in Sources */,
+				43F956DE2788DE85003C9C40 /* ShaderManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,7 +969,7 @@
 		};
 		43CC37AC1BC17594009F3FD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D462B84847304BC28B9B007 /* Pods-sprawl.debug.xcconfig */;
+			baseConfigurationReference = 72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -873,7 +1008,7 @@
 		};
 		43CC37AD1BC17594009F3FD0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3A9CA73EB1728A151AFB8B7 /* Pods-sprawl.release.xcconfig */;
+			baseConfigurationReference = 0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -885,6 +1020,83 @@
 					"GLES_SILENCE_DEPRECATION=1",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/sprawl/meta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/core\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtc\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtx\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43F956F52788DE85003C9C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				INFOPLIST_FILE = "sprawl_opengl copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/core\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtc\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/gtx\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43F956F62788DE85003C9C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				INFOPLIST_FILE = "sprawl_opengl copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
@@ -921,11 +1133,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43CC37AB1BC17594009F3FD0 /* Build configuration list for PBXNativeTarget "sprawl" */ = {
+		43CC37AB1BC17594009F3FD0 /* Build configuration list for PBXNativeTarget "sprawl_opengl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43CC37AC1BC17594009F3FD0 /* Debug */,
 				43CC37AD1BC17594009F3FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43F956F42788DE85003C9C40 /* Build configuration list for PBXNativeTarget "sprawl_metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F956F52788DE85003C9C40 /* Debug */,
+				43F956F62788DE85003C9C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
