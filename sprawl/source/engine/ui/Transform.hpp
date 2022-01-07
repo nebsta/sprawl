@@ -18,7 +18,6 @@
 #include <matrix_transform.hpp>
 
 #include "Object.hpp"
-#include "ViewHelper.hpp"
 #include "ScreenManager.hpp"
 
 typedef enum TransformConstraint {

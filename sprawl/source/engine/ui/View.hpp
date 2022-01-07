@@ -16,14 +16,13 @@
 #include "Object.hpp"
 #include "Transform.hpp"
 #include "Responder.hpp"
-#include "ViewRenderer.hpp"
 #include "ViewAnimator.hpp"
 #include "ScreenManager.hpp"
+#include "Renderer.hpp"
 
 #include "ColorConstants.h"
 #include "MathConstants.h"
-
-#include "ViewHelper.hpp"
+#include "Graphics.hpp"
 
 #define VIEW_DEFAULT_COLOR COLOR_WHITE
 #define VIEW_DEFAULT_POSITION glm::vec2(0,0)
@@ -41,7 +40,7 @@ public:
     ~View();
     
     void render();
-    void update(float dt);
+    void update(const float& dt);
     
     void setViewConstraint(TransformConstraint constraint);
     
@@ -55,7 +54,7 @@ public:
     void removeChild(View* const view);
     bool hasChildren() const;
     
-    Renderer* renderer();
+    Renderer* const renderer();
     Transform& transform();
     Responder& responder();
     ViewAnimator& animator();

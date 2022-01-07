@@ -14,7 +14,7 @@
 #include "View.hpp"
 #include "Sprite.h"
 #include "MathConstants.h"
-#include "ImageViewRenderer.hpp"
+#include "Graphics.hpp"
 
 #define IMAGEVIEW_DEFAULT_POSITION VECTOR_EMPTY
 #define IMAGEVIEW_DEFAULT_COLOR COLOR_WHITE
@@ -27,7 +27,7 @@ public:
     ImageView(const Sprite& sprite, const glm::vec2& position);
     ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size);
     ImageView(const Sprite& sprite, const glm::vec2& position, const glm::vec2& size, const glm::vec4& tint);
-    ImageView(const glm::vec2& position, const glm::vec2& size, Renderer *renderer);
+    ImageView(const glm::vec2& position, const glm::vec2& size, Renderer * const renderer);
     ~ImageView();
     
     void setSprite(Sprite sprite);

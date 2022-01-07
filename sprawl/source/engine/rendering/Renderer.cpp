@@ -10,21 +10,19 @@
 
 typedef std::vector<Renderer*>::iterator RendererIterator;
 
-Renderer::Renderer() : Renderer(RENDERER_DEFAULT_SHAPE,RENDERER_DEFAULT_COLOR) {
+Renderer::Renderer() : Renderer(RENDERER_DEFAULT_COLOR) {
     
 }
 
-Renderer::Renderer(const glm::vec4& tint) : Renderer(RENDERER_DEFAULT_SHAPE,tint) {
+Renderer::Renderer(const glm::vec4& tint) : Renderer(RENDERER_DEFAULT_SHAPE, tint) {
     
 }
 
-Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(RENDERER_DEFAULT_SHAPE,RENDERER_DEFAULT_COLOR,RENDERER_DEFAULT_SHADER) {
+Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(mesh, tint, RENDERER_DEFAULT_SHADER) {
     
 }
 
 Renderer::Renderer(const Mesh& mesh, const glm::vec4& tint, const std::string& shader) :
-_vertexArray(0),
-_vertexBuffer(0),
 _mesh(mesh),
 _tint(tint),
 _modelviewMatrix(glm::mat4()),
@@ -32,32 +30,14 @@ _projectionMatrix(RENDERER_DEFAULT_PROJECTION),
 _shader(shader),
 _clipChildren(true) {
     
-    _shaderProgram = ShaderManager::instance().getProgram(_shader);
-    _tintId = ShaderManager::instance().getUniformId(_shader,Uniform_ColorTint);
-    _modelviewId = ShaderManager::instance().getUniformId(_shader,Uniform_ModelviewMatrix);
-    _projectionId = ShaderManager::instance().getUniformId(_shader,Uniform_ProjectionMatrix);
 }
 
 Renderer::~Renderer() {
-    glDeleteBuffers(1, &_vertexBuffer);
-    glDeleteVertexArraysOES(1, &_vertexArray);
 }
 
 void Renderer::render() {
-    
-    glUseProgram(_shaderProgram);
-
-    glBindVertexArrayOES(_vertexArray);
-
-    glUniform4fv(_tintId, 1, &_tint[0]);
-    glUniformMatrix4fv(_modelviewId, 1, 0, &_modelviewMatrix[0][0]);
-    glUniformMatrix4fv(_projectionId, 1, 0, &_projectionMatrix[0][0]);
-    
-    onPreDraw();
-
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, _mesh.vertexCount);
-    glBindVertexArrayOES(0);
-
+    preDraw();
+    draw();
     onPostDraw();
 }
 
@@ -103,9 +83,13 @@ void Renderer::setClipChildren(const bool& clipChildren) {
     _clipChildren = clipChildren;
 }
 
-#pragma mark Virtual Functions
+#pragma mark Virtual Methods
 
-void Renderer::onPreDraw() {
+void Renderer::preDraw() {
+    
+}
+
+void Renderer::draw() {
     
 }
 

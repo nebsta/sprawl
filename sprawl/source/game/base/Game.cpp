@@ -15,11 +15,11 @@ _spriteLoader(spriteLoader) {
     
     _mainView.renderer()->setTint(COLOR_RED);
     
-    BoardView *_boardView = new BoardView(_boardDataModel, spriteLoader);
-    _mainView.addChild(_boardView);
-    
-    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
-    _boardDataModel.addBlueprint(blueprint);
+//    BoardView *_boardView = new BoardView(_boardDataModel, spriteLoader);
+//    _mainView.addChild(_boardView);
+//
+//    BlueprintDataModel blueprint = _blueprintManager.getRandomBlueprint();
+//    _boardDataModel.addBlueprint(blueprint);
 }
 
 Game::~Game() {

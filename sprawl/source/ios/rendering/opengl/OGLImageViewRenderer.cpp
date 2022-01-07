@@ -1,34 +1,34 @@
 //
-//  ImageViewRenderer.cpp
+//  OGLImageViewRenderer.cpp
 //  sprawl
 //
-//  Created by Benjamin Wallis on 8/11/2015.
-//  Copyright © 2015 The Caffeinated Coder. All rights reserved.
+//  Created by Benjamin Wallis on 07/01/2022.
+//  Copyright © 2022 The Caffeinated Coder. All rights reserved.
 //
 
-#include "ImageViewRenderer.hpp"
+#include "OGLImageViewRenderer.hpp"
 
-ImageViewRenderer::ImageViewRenderer() : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE) {
+OGLImageViewRenderer::OGLImageViewRenderer() : OGLImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(const Mesh& shape) : ImageViewRenderer(shape,IMAGEVIEW_RENDERER_DEFAULT_SPRITE) {
+OGLImageViewRenderer::OGLImageViewRenderer(const Mesh& shape) : OGLImageViewRenderer(shape,IMAGEVIEW_RENDERER_DEFAULT_SPRITE) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(const Sprite& sprite) : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE,sprite) {
+OGLImageViewRenderer::OGLImageViewRenderer(const Sprite& sprite) : OGLImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE,sprite) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(const Sprite& sprite, const glm::vec4& tint) : ImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE, sprite, tint) {
+OGLImageViewRenderer::OGLImageViewRenderer(const Sprite& sprite, const glm::vec4& tint) : OGLImageViewRenderer(IMAGEVIEW_RENDERER_DEFAULT_SHAPE, sprite, tint) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(const Mesh& shape, const Sprite& sprite) : ImageViewRenderer(shape,sprite,IMAGEVIEW_RENDERER_DEFAULT_COLOR) {
+OGLImageViewRenderer::OGLImageViewRenderer(const Mesh& shape, const Sprite& sprite) : OGLImageViewRenderer(shape,sprite,IMAGEVIEW_RENDERER_DEFAULT_COLOR) {
     
 }
 
-ImageViewRenderer::ImageViewRenderer(const Mesh& shape, const Sprite& sprite, const glm::vec4& tint) : Renderer(shape,tint,IMAGEVIEW_RENDERER_DEFAULT_SHADER),
+OGLImageViewRenderer::OGLImageViewRenderer(const Mesh& shape, const Sprite& sprite, const glm::vec4& tint) : OGLRenderer(shape,tint,IMAGEVIEW_RENDERER_DEFAULT_SHADER),
 _sprite(sprite) {
     
     refreshTextureCoords();
@@ -50,11 +50,11 @@ _sprite(sprite) {
     glBindVertexArrayOES(0);
 }
 
-ImageViewRenderer::~ImageViewRenderer() {
+OGLImageViewRenderer::~OGLImageViewRenderer() {
     
 }
 
-void ImageViewRenderer::onPreDraw() {
+void OGLImageViewRenderer::preDraw() {
     if (!isSpriteEmpty(_sprite)) {
         glBindTexture(GL_TEXTURE_2D, _sprite.texture.name);
     } else {
@@ -62,7 +62,7 @@ void ImageViewRenderer::onPreDraw() {
     }
 }
 
-void ImageViewRenderer::refreshTextureCoords() {
+void OGLImageViewRenderer::refreshTextureCoords() {
     if (isSpriteEmpty(_sprite)) {
         _mesh.vertices[0].textCoord = glm::vec2(0,0);
         _mesh.vertices[1].textCoord = glm::vec2(0,1);
@@ -78,7 +78,7 @@ void ImageViewRenderer::refreshTextureCoords() {
     _mesh.vertices[3].textCoord = glm::vec2(region.x+region.w,region.y);
 }
 
-void ImageViewRenderer::setSprite(Sprite sprite) {
+void OGLImageViewRenderer::setSprite(Sprite sprite) {
     _sprite = sprite;
     refreshTextureCoords();
 }

@@ -22,14 +22,14 @@ View::View(const glm::vec2& position, const glm::vec2& size) : View(position,siz
     
 }
 
-View::View(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color) : View(position,size,new ViewRenderer(color))
+View::View(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color) : View(position,size, Graphics::CreateViewRenderer(color))
 {
 
 }
 
 View::View(const glm::vec2& position, const glm::vec2& size, Renderer* renderer) :
 _renderer(renderer),
-_transform(Transform(position,size)),
+_transform(position,size),
 _responder(_transform),
 _screenManager(ScreenManager::instance()) {
     refreshRendererMatrix();
@@ -57,7 +57,7 @@ void View::render() {
     _renderer->popClippingRect();
 }
 
-void View::update(float dt) {
+void View::update(const float& dt) {
     
     if (_animator.isPlaying()) {
         
@@ -186,7 +186,7 @@ bool View::hasChildren() const {
 
 #pragma mark Getters
 
-Renderer* View::renderer() {
+Renderer* const View::renderer() {
     return _renderer.get();
 }
 

@@ -1,22 +1,18 @@
 //
-//  ViewRenderer.cpp
+//  OGLViewRenderer.cpp
 //  sprawl
 //
-//  Created by Benjamin Wallis on 3/01/2016.
-//  Copyright © 2016 The Caffeinated Coder. All rights reserved.
+//  Created by Benjamin Wallis on 07/01/2022.
+//  Copyright © 2022 The Caffeinated Coder. All rights reserved.
 //
 
-#include "ViewRenderer.hpp"
+#include "OGLViewRenderer.hpp"
 
-ViewRenderer::ViewRenderer() : ViewRenderer(VIEW_RENDERER_DEFAULT_COLOR) {
+OGLViewRenderer::OGLViewRenderer(const glm::vec4& tint) : OGLRenderer(RENDERER_DEFAULT_SHAPE, tint) {
     
 }
 
-ViewRenderer::ViewRenderer(const glm::vec4& tint) : ViewRenderer(VIEW_RENDERER_DEFAULT_MESH,tint) {
-    
-}
-
-ViewRenderer::ViewRenderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(mesh, tint) {
+OGLViewRenderer::OGLViewRenderer(const Mesh& mesh, const glm::vec4& tint) : OGLRenderer(mesh, tint) {
     glGenVertexArraysOES(1, &_vertexArray);
     glBindVertexArrayOES(_vertexArray);
     
@@ -31,6 +27,7 @@ ViewRenderer::ViewRenderer(const Mesh& mesh, const glm::vec4& tint) : Renderer(m
     glBindVertexArrayOES(0);
 }
 
-ViewRenderer::~ViewRenderer() {
+
+OGLViewRenderer::~OGLViewRenderer() {
     
 }

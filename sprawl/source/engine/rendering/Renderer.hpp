@@ -52,12 +52,6 @@ const Mesh Square = {
 
 class Renderer : public Object {
     
-private:
-    GLuint _shaderProgram;
-    GLuint _tintId;
-    GLuint _modelviewId;
-    GLuint _projectionId;
-    
 public:
     Renderer();
     Renderer(const glm::vec4& tint);
@@ -88,10 +82,8 @@ protected:
     glm::mat4 _modelviewMatrix;
     glm::mat4 _projectionMatrix;
     
-    GLuint _vertexArray;
-    GLuint _vertexBuffer;
-    
-    virtual void onPreDraw();
+    virtual void preDraw();
+    virtual void draw();
     virtual void onPostDraw();
 };
 

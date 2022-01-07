@@ -18,7 +18,6 @@
 #include "Touch.h"
 #include "MathConstants.h"
 #include "Transform.hpp"
-#include "ViewHelper.hpp"
 
 typedef std::function<void(Touch)> TouchCallback;
 
