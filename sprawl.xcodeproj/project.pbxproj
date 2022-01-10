@@ -25,12 +25,23 @@
 		431DCDE61C5D4620009CA06A /* BoardLayerView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */; };
 		431DCDE91C5D64F3009CA06A /* BlueprintManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */; };
 		431DCDED1C5D665E009CA06A /* example_blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 431DCDEC1C5D665E009CA06A /* example_blueprint.json */; };
-		431F25FF1C42C34F0064BF81 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431F25FE1C42C34F0064BF81 /* shader_config.plist */; };
 		4329CA641BEFF5E600F18459 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4329CA621BEFF5E600F18459 /* Renderer.cpp */; };
 		433F0B88278C61FB001BD027 /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B84278C61FB001BD027 /* SpriteManager.cpp */; };
 		433F0B89278C61FB001BD027 /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B84278C61FB001BD027 /* SpriteManager.cpp */; };
 		433F0B8C278C6255001BD027 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B8A278C6254001BD027 /* Graphics.cpp */; };
 		433F0B8D278C6255001BD027 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B8A278C6254001BD027 /* Graphics.cpp */; };
+		433F0B93278C6A8D001BD027 /* MetalViewShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B92278C6A8D001BD027 /* MetalViewShader.metal */; };
+		433F0B94278C6A8D001BD027 /* MetalViewShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B92278C6A8D001BD027 /* MetalViewShader.metal */; };
+		433F0B9B278C6AA7001BD027 /* ImageViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B96278C6AA7001BD027 /* ImageViewShader.fsh */; };
+		433F0B9C278C6AA7001BD027 /* ImageViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B96278C6AA7001BD027 /* ImageViewShader.fsh */; };
+		433F0B9D278C6AA7001BD027 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B97278C6AA7001BD027 /* shader_config.plist */; };
+		433F0B9E278C6AA7001BD027 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B97278C6AA7001BD027 /* shader_config.plist */; };
+		433F0B9F278C6AA7001BD027 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B98278C6AA7001BD027 /* ViewShader.fsh */; };
+		433F0BA0278C6AA7001BD027 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B98278C6AA7001BD027 /* ViewShader.fsh */; };
+		433F0BA1278C6AA7001BD027 /* ImageViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B99278C6AA7001BD027 /* ImageViewShader.vsh */; };
+		433F0BA2278C6AA7001BD027 /* ImageViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B99278C6AA7001BD027 /* ImageViewShader.vsh */; };
+		433F0BA3278C6AA7001BD027 /* ViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B9A278C6AA7001BD027 /* ViewShader.vsh */; };
+		433F0BA4278C6AA7001BD027 /* ViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 433F0B9A278C6AA7001BD027 /* ViewShader.vsh */; };
 		4343C9E71C425D2B006FED90 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4343C9E51C425D2B006FED90 /* Button.cpp */; };
 		4352E1DD2766390500B0E797 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1DB2766390500B0E797 /* Game.cpp */; };
 		4352E1EC276646ED00B0E797 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1E8276646ED00B0E797 /* RootViewController.mm */; };
@@ -47,11 +58,7 @@
 		43809F982788E4D000376332 /* MetalViewRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43809F952788E4D000376332 /* MetalViewRenderer.cpp */; };
 		43815BE121FCD45A00EC86C5 /* ScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */; };
 		4385637C1C58147D00246A70 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4385637B1C58147D00246A70 /* Message.cpp */; };
-		43A10D281C4BD27100F4A2E2 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */; };
-		43A10D291C4BD27100F4A2E2 /* ViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */; };
 		43AFE1781C38C72A00B5A303 /* BoardView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AFE1761C38C72A00B5A303 /* BoardView.cpp */; };
-		43BF41301BE6915A00D8011B /* ImageViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */; };
-		43BF41311BE6915A00D8011B /* ImageViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */; };
 		43CC37C31BC17761009F3FD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CC37C21BC17761009F3FD0 /* main.m */; };
 		43CC37D21BC17869009F3FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */; };
 		43CC37D31BC17869009F3FD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D11BC17869009F3FD0 /* Main.storyboard */; };
@@ -87,16 +94,11 @@
 		43F956DB2788DE85003C9C40 /* Responder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F28E271BF79B4F003E86B7 /* Responder.cpp */; };
 		43F956DD2788DE85003C9C40 /* ImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C241BEF86BC00A7128E /* ImageView.cpp */; };
 		43F956E52788DE85003C9C40 /* main_tileset_hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 430A3BDC1BEF77A200A7128E /* main_tileset_hd.plist */; };
-		43F956E62788DE85003C9C40 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431F25FE1C42C34F0064BF81 /* shader_config.plist */; };
 		43F956E72788DE85003C9C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D11BC17869009F3FD0 /* Main.storyboard */; };
-		43F956E82788DE85003C9C40 /* ImageViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */; };
 		43F956E92788DE85003C9C40 /* main_tileset_hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 430A3BDD1BEF77A200A7128E /* main_tileset_hd.png */; };
 		43F956EA2788DE85003C9C40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D91BC178C6009F3FD0 /* Images.xcassets */; };
 		43F956EB2788DE85003C9C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */; };
 		43F956EC2788DE85003C9C40 /* example_blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 431DCDEC1C5D665E009CA06A /* example_blueprint.json */; };
-		43F956ED2788DE85003C9C40 /* ViewShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */; };
-		43F956EE2788DE85003C9C40 /* ImageViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */; };
-		43F956EF2788DE85003C9C40 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */; };
 		43F956F02788DE85003C9C40 /* test_tileset_HD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */; };
 		43F956F12788DE85003C9C40 /* test_tileset_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 4361F4601EAE561700A0CC03 /* test_tileset_HD.png */; };
 		43FAACE727879E7500B300BF /* MemoryProfiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43FAACE527879E7500B300BF /* MemoryProfiler.cpp */; };
@@ -145,7 +147,6 @@
 		431DCDE81C5D64F3009CA06A /* BlueprintManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlueprintManager.hpp; sourceTree = "<group>"; };
 		431DCDEA1C5D6547009CA06A /* BlueprintDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueprintDataModel.h; path = source/game/blueprint/BlueprintDataModel.h; sourceTree = "<group>"; };
 		431DCDEC1C5D665E009CA06A /* example_blueprint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = example_blueprint.json; path = assets/blueprints/example_blueprint.json; sourceTree = "<group>"; };
-		431F25FE1C42C34F0064BF81 /* shader_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = shader_config.plist; path = assets/shaders/shader_config.plist; sourceTree = "<group>"; };
 		4329CA621BEFF5E600F18459 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = source/engine/rendering/Renderer.cpp; sourceTree = "<group>"; };
 		4329CA631BEFF5E600F18459 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Renderer.hpp; path = source/engine/rendering/Renderer.hpp; sourceTree = "<group>"; };
 		433F0B83278C61FB001BD027 /* SpriteHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SpriteHandler.hpp; path = source/engine/texture/SpriteHandler.hpp; sourceTree = "<group>"; };
@@ -154,6 +155,12 @@
 		433F0B8A278C6254001BD027 /* Graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Graphics.cpp; path = source/engine/rendering/Graphics.cpp; sourceTree = "<group>"; };
 		433F0B8B278C6254001BD027 /* Graphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Graphics.hpp; path = source/engine/rendering/Graphics.hpp; sourceTree = "<group>"; };
 		433F0B8E278C69FB001BD027 /* Info_metal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_metal.plist; path = meta/Info_metal.plist; sourceTree = "<group>"; };
+		433F0B92278C6A8D001BD027 /* MetalViewShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = MetalViewShader.metal; path = assets/shaders/metal/MetalViewShader.metal; sourceTree = "<group>"; };
+		433F0B96278C6AA7001BD027 /* ImageViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ImageViewShader.fsh; sourceTree = "<group>"; };
+		433F0B97278C6AA7001BD027 /* shader_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shader_config.plist; sourceTree = "<group>"; };
+		433F0B98278C6AA7001BD027 /* ViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ViewShader.fsh; sourceTree = "<group>"; };
+		433F0B99278C6AA7001BD027 /* ImageViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ImageViewShader.vsh; sourceTree = "<group>"; };
+		433F0B9A278C6AA7001BD027 /* ViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ViewShader.vsh; sourceTree = "<group>"; };
 		4343C9E51C425D2B006FED90 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Button.cpp; path = source/engine/ui/Button.cpp; sourceTree = "<group>"; };
 		4343C9E61C425D2B006FED90 /* Button.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Button.hpp; path = source/engine/ui/Button.hpp; sourceTree = "<group>"; };
 		4352E1DB2766390500B0E797 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = source/game/base/Game.cpp; sourceTree = "<group>"; };
@@ -182,13 +189,9 @@
 		43815BE021FCD45A00EC86C5 /* ScreenManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScreenManager.hpp; sourceTree = "<group>"; };
 		4385637B1C58147D00246A70 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Message.cpp; path = source/engine/message/Message.cpp; sourceTree = "<group>"; };
 		4385A58B1C55503C0079198B /* Message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Message.hpp; path = source/engine/message/Message.hpp; sourceTree = "<group>"; };
-		43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ViewShader.fsh; path = assets/shaders/ViewShader.fsh; sourceTree = "<group>"; };
-		43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ViewShader.vsh; path = assets/shaders/ViewShader.vsh; sourceTree = "<group>"; };
 		43AD74FCABB8D08420E6C273 /* Pods-sprawl_metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.release.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.release.xcconfig"; sourceTree = "<group>"; };
 		43AFE1761C38C72A00B5A303 /* BoardView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardView.cpp; path = source/game/board/BoardView.cpp; sourceTree = "<group>"; };
 		43AFE1771C38C72A00B5A303 /* BoardView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardView.hpp; path = source/game/board/BoardView.hpp; sourceTree = "<group>"; };
-		43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.fsh; path = assets/shaders/ImageViewShader.fsh; sourceTree = "<group>"; };
-		43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.vsh; path = assets/shaders/ImageViewShader.vsh; sourceTree = "<group>"; };
 		43CC37901BC17594009F3FD0 /* sprawl_opengl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_opengl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CC37C21BC17761009F3FD0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = xib/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -439,6 +442,27 @@
 			name = rendering;
 			sourceTree = "<group>";
 		};
+		433F0B91278C6A81001BD027 /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				433F0B92278C6A8D001BD027 /* MetalViewShader.metal */,
+			);
+			name = metal;
+			sourceTree = "<group>";
+		};
+		433F0B95278C6AA7001BD027 /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				433F0B96278C6AA7001BD027 /* ImageViewShader.fsh */,
+				433F0B97278C6AA7001BD027 /* shader_config.plist */,
+				433F0B98278C6AA7001BD027 /* ViewShader.fsh */,
+				433F0B99278C6AA7001BD027 /* ImageViewShader.vsh */,
+				433F0B9A278C6AA7001BD027 /* ViewShader.vsh */,
+			);
+			name = opengl;
+			path = assets/shaders/opengl;
+			sourceTree = "<group>";
+		};
 		4352E1E7276646ED00B0E797 /* ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,11 +545,8 @@
 		43BF412A1BE6914300D8011B /* shaders */ = {
 			isa = PBXGroup;
 			children = (
-				431F25FE1C42C34F0064BF81 /* shader_config.plist */,
-				43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */,
-				43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */,
-				43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */,
-				43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */,
+				433F0B95278C6AA7001BD027 /* opengl */,
+				433F0B91278C6A81001BD027 /* metal */,
 			);
 			name = shaders;
 			sourceTree = "<group>";
@@ -739,18 +760,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				430A3BE01BEF77A200A7128E /* main_tileset_hd.plist in Resources */,
-				431F25FF1C42C34F0064BF81 /* shader_config.plist in Resources */,
 				43CC37D31BC17869009F3FD0 /* Main.storyboard in Resources */,
-				43BF41311BE6915A00D8011B /* ImageViewShader.vsh in Resources */,
 				430A3BE11BEF77A200A7128E /* main_tileset_hd.png in Resources */,
+				433F0BA1278C6AA7001BD027 /* ImageViewShader.vsh in Resources */,
+				433F0B9B278C6AA7001BD027 /* ImageViewShader.fsh in Resources */,
 				43CC37DA1BC178C6009F3FD0 /* Images.xcassets in Resources */,
 				43CC37D21BC17869009F3FD0 /* LaunchScreen.storyboard in Resources */,
 				431DCDED1C5D665E009CA06A /* example_blueprint.json in Resources */,
-				43A10D291C4BD27100F4A2E2 /* ViewShader.vsh in Resources */,
-				43BF41301BE6915A00D8011B /* ImageViewShader.fsh in Resources */,
-				43A10D281C4BD27100F4A2E2 /* ViewShader.fsh in Resources */,
+				433F0B9D278C6AA7001BD027 /* shader_config.plist in Resources */,
 				4361F4611EAE561700A0CC03 /* test_tileset_HD.plist in Resources */,
 				4361F4621EAE561700A0CC03 /* test_tileset_HD.png in Resources */,
+				433F0BA3278C6AA7001BD027 /* ViewShader.vsh in Resources */,
+				433F0B9F278C6AA7001BD027 /* ViewShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,18 +780,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F956E52788DE85003C9C40 /* main_tileset_hd.plist in Resources */,
-				43F956E62788DE85003C9C40 /* shader_config.plist in Resources */,
 				43F956E72788DE85003C9C40 /* Main.storyboard in Resources */,
-				43F956E82788DE85003C9C40 /* ImageViewShader.vsh in Resources */,
 				43F956E92788DE85003C9C40 /* main_tileset_hd.png in Resources */,
+				433F0BA2278C6AA7001BD027 /* ImageViewShader.vsh in Resources */,
+				433F0B9C278C6AA7001BD027 /* ImageViewShader.fsh in Resources */,
 				43F956EA2788DE85003C9C40 /* Images.xcassets in Resources */,
 				43F956EB2788DE85003C9C40 /* LaunchScreen.storyboard in Resources */,
 				43F956EC2788DE85003C9C40 /* example_blueprint.json in Resources */,
-				43F956ED2788DE85003C9C40 /* ViewShader.vsh in Resources */,
-				43F956EE2788DE85003C9C40 /* ImageViewShader.fsh in Resources */,
-				43F956EF2788DE85003C9C40 /* ViewShader.fsh in Resources */,
+				433F0B9E278C6AA7001BD027 /* shader_config.plist in Resources */,
 				43F956F02788DE85003C9C40 /* test_tileset_HD.plist in Resources */,
 				43F956F12788DE85003C9C40 /* test_tileset_HD.png in Resources */,
+				433F0BA4278C6AA7001BD027 /* ViewShader.vsh in Resources */,
+				433F0BA0278C6AA7001BD027 /* ViewShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +861,7 @@
 				4352E1ED276646ED00B0E797 /* AppDelegate.mm in Sources */,
 				4343C9E71C425D2B006FED90 /* Button.cpp in Sources */,
 				43EDA6A61C417FD200FE7F8F /* CellView.cpp in Sources */,
+				433F0B93278C6A8D001BD027 /* MetalViewShader.metal in Sources */,
 				43CC37C31BC17761009F3FD0 /* main.m in Sources */,
 				43FAACE727879E7500B300BF /* MemoryProfiler.cpp in Sources */,
 				430A3C161BEF84E400A7128E /* Object.cpp in Sources */,
@@ -875,6 +897,7 @@
 				433F0B89278C61FB001BD027 /* SpriteManager.cpp in Sources */,
 				43F956C82788DE85003C9C40 /* Animator.cpp in Sources */,
 				43F956C92788DE85003C9C40 /* Renderer.cpp in Sources */,
+				433F0B94278C6A8D001BD027 /* MetalViewShader.metal in Sources */,
 				43F956CA2788DE85003C9C40 /* AppDelegate.mm in Sources */,
 				43F956CB2788DE85003C9C40 /* Button.cpp in Sources */,
 				43F956CC2788DE85003C9C40 /* CellView.cpp in Sources */,
