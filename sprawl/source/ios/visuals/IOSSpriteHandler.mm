@@ -6,17 +6,21 @@
 //  Copyright © 2015 The Caffeinated Coder. All rights reserved.
 //
 
-#include "SpriteManager.hpp"
+#include "IOSSpriteHandler.hpp"
 
-SpriteManager::SpriteManager() {
-    parseAtlas("main_tileset_hd");
+IOSSpriteHandler::IOSSpriteHandler() {
+    
 }
 
-SpriteManager::~SpriteManager() {
-    parseAtlas("main_tileset_hd");
+IOSSpriteHandler::~IOSSpriteHandler() {
+    
 }
 
-GLKTextureInfo* SpriteManager::loadTexture(string filename) const {
+void IOSSpriteHandler::loadAtlases() {
+    loadAtlas("main_tileset_hd");
+}
+
+GLKTextureInfo* IOSSpriteHandler::loadTexture(string filename) const {
     
     NSError *err;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:filename.c_str()] ofType:@"png"];
@@ -34,13 +38,13 @@ GLKTextureInfo* SpriteManager::loadTexture(string filename) const {
     return texture;
 }
 
-Sprite SpriteManager::loadSprite(const string& file, const string& spriteName) const {
+Sprite IOSSpriteHandler::loadSprite(const string& file, const string& spriteName) {
     GLKTextureInfo *texture = loadTexture(file);
     Region region = _allAtlases.at(file).at(spriteName);
     return {texture,region};
 }
 
-glm::vec2 SpriteManager::parseAtlasSize(NSString *raw) {
+glm::vec2 IOSSpriteHandler::parseAtlasSize(NSString *raw) {
     glm::vec2 size;
 
     raw = [raw substringWithRange:NSMakeRange(1, raw.length-2)];
@@ -51,7 +55,7 @@ glm::vec2 SpriteManager::parseAtlasSize(NSString *raw) {
     return size;
 }
 
-void SpriteManager::parseAtlas(string file) {
+void IOSSpriteHandler::loadAtlas(string file) {
     NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:file.c_str()] ofType:@"plist"];
     NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:path];
     NSDictionary *frames = [root objectForKey:@"frames"];

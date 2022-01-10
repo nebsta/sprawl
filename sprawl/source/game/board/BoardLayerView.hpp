@@ -10,17 +10,18 @@
 #define BoardLayerView_hpp
 
 #import "CellView.hpp"
+#import "SpriteManager.hpp"
 
 class BoardLayerView : public View {
 public:
-    BoardLayerView(const glm::vec2& size, const SpriteLoader& spriteLoader);
+    BoardLayerView(const glm::vec2& size, const SpriteManager& spriteManager);
     ~BoardLayerView();
     
     void addCell(const CellDataModel& cell);
     void removeCell(const CellDataModel& cell);
     
 private:
-    const SpriteLoader& _spriteLoader;
+    const SpriteManager& _spriteManager;
 };
 
 #endif /* BoardLayerView_hpp */

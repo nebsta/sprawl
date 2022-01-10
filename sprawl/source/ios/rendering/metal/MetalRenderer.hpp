@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+#include "Renderer.hpp"
+
+class MetalRenderer : public Renderer {
+    
+};
+
 #endif /* MetalRenderer_hpp */

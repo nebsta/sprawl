@@ -8,16 +8,18 @@
 
 #include "Graphics.hpp"
 
-#define GRAPHICS_OPENGL
-
 Renderer* Graphics::CreateViewRenderer(const glm::vec4& tint) {
 #ifdef GRAPHICS_OPENGL
     return new OGLViewRenderer(tint);
+#else
+    return new MetalViewRenderer();
 #endif
 }
 
 Renderer* Graphics::CreateImageRenderer(const Sprite& sprite, const glm::vec4& tint) {
 #ifdef GRAPHICS_OPENGL
     return new OGLImageViewRenderer(sprite, tint);
+#else
+    return new MetalImageViewRenderer();
 #endif
 }

@@ -28,7 +28,7 @@ typedef enum BoardLayer {
 class BoardView : public View, public BoardDataModelListener {
     
 public:
-    BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader);
+    BoardView(BoardDataModel& model, const SpriteManager& spriteLoader);
     ~BoardView();
     
     void addCell(const CellDataModel& cell, const BoardLayer& layer);
@@ -42,7 +42,7 @@ public:
 private:
     std::map<int,BoardLayerView*> _layers;
     
-    void buildLayerView(const BoardLayer &layer, const SpriteLoader& spriteLoader);
+    void buildLayerView(const BoardLayer &layer, const SpriteManager& spriteLoader);
 };
 
 #endif /* BoardView_hpp */

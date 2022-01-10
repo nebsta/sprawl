@@ -2,8 +2,8 @@
 //  SpriteManager.hpp
 //  sprawl
 //
-//  Created by Benjamin Wallis on 8/11/2015.
-//  Copyright © 2015 The Caffeinated Coder. All rights reserved.
+//  Created by Benjamin Wallis on 10/01/2022.
+//  Copyright © 2022 The Caffeinated Coder. All rights reserved.
 //
 
 #ifndef SpriteManager_hpp
@@ -15,21 +15,22 @@
 #include <map>
 
 #include "Sprite.h"
+#include "SpriteHandler.hpp"
 #include "Logger.h"
-#include "SpriteLoader.h"
 
 using namespace std;
 
-class SpriteManager : public SpriteLoader {
+class SpriteManager {
     
 public:
     SpriteManager();
     ~SpriteManager();
     
-    GLKTextureInfo* loadTexture(string filename) const;
     Sprite loadSprite(const string& file, const string& spriteName) const;
     
 private:
+    unique_ptr<SpriteHandler> _spriteHandler;
+    
     map<string, map<string,Region>> _allAtlases;
     
     void parseAtlas(string file);
@@ -37,3 +38,4 @@ private:
 };
 
 #endif /* SpriteManager_hpp */
+

@@ -11,4 +11,13 @@
 
 #include <stdio.h>
 
+#include "MetalRenderer.hpp"
+#include "Sprite.h"
+
+class MetalImageViewRenderer : public MetalRenderer {
+public:
+    
+private:
+};
+
 #endif /* MetalImageViewRenderer_hpp */

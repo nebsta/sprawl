@@ -13,16 +13,16 @@
 
 #import "View.hpp"
 #import "Object.hpp"
-#import "SpriteLoader.h"
 #import "BlueprintManager.hpp"
 #import "ScreenHandler.h"
 #import "BoardDataModel.hpp"
 #import "BoardView.hpp"
+#import "SpriteManager.hpp"
 
 class Game : public Object {
     
 public:
-    Game(const ScreenHandler& screenHandler, const SpriteLoader& spriteLoader);
+    Game(const ScreenHandler& screenHandler);
     ~Game();
     
     void update(const float& dt);
@@ -30,7 +30,7 @@ public:
     
 private:
     const ScreenHandler &_screenHandler;
-    const SpriteLoader &_spriteLoader;
+    const SpriteManager _spriteManager;
     BlueprintManager _blueprintManager;
     
     View _mainView;

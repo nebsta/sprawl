@@ -52,13 +52,13 @@ inline std::string spriteNameForType(CellType type) {
     return name;
 }
 
-inline Sprite spriteForType(const SpriteLoader& loader, CellType type) {
+inline Sprite spriteForType(const SpriteManager& manager, CellType type) {
     if (type == Cell_None) {
         return SpriteEmpty;
     }
     
     std::string name = spriteNameForType(type);
-    return loader.loadSprite("main_tileset_hd",name);
+    return manager.loadSprite("main_tileset_hd",name);
 }
 
 inline bool operator==(const GridLocation& s1, const GridLocation& s2)

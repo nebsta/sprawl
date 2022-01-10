@@ -8,8 +8,8 @@
 
 #include "BoardLayerView.hpp"
 
-BoardLayerView::BoardLayerView(const glm::vec2& size, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,size,COLOR_CLEAR),
-_spriteLoader(spriteLoader) {
+BoardLayerView::BoardLayerView(const glm::vec2& size, const SpriteManager& spriteManager) : View(VECTOR_EMPTY,size,COLOR_CLEAR),
+_spriteManager(spriteManager) {
     
 }
 
@@ -18,7 +18,7 @@ BoardLayerView::~BoardLayerView() {
 }
 
 void BoardLayerView::addCell(const CellDataModel& cell) {
-    CellView* view = new CellView(cell, _spriteLoader);
+    CellView* view = new CellView(cell, _spriteManager);
     view->transform().setLocalPosition(glm::vec2(cell.location.column*50,cell.location.row*50));
     view->transform().setSize(glm::vec2(50,50));
     addChild(view);

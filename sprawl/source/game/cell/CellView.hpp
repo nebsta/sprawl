@@ -16,7 +16,7 @@
 class CellView : public View {
     
 public:
-    CellView(const CellDataModel& model, const SpriteLoader& spriteLoader);
+    CellView(const CellDataModel& model, const SpriteManager& spriteManager);
     ~CellView();
 };
 

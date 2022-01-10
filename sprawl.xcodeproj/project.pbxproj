@@ -18,24 +18,33 @@
 		430A3C311BEF86BC00A7128E /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C2A1BEF86BC00A7128E /* Transform.cpp */; };
 		430A3C321BEF86BC00A7128E /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C2C1BEF86BC00A7128E /* View.cpp */; };
 		430A3C391BEF86D600A7128E /* Logger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C381BEF86D600A7128E /* Logger.mm */; };
-		430A3C3F1BEF8ADB00A7128E /* SpriteManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */; };
+		430A3C3F1BEF8ADB00A7128E /* IOSSpriteHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3D1BEF8ADB00A7128E /* IOSSpriteHandler.mm */; };
 		431756D3278894F600F6946F /* OGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756D1278894F600F6946F /* OGLRenderer.cpp */; };
 		431756D62788959200F6946F /* OGLViewRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756D42788959200F6946F /* OGLViewRenderer.cpp */; };
 		431756D9278898CB00F6946F /* OGLImageViewRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756D7278898CB00F6946F /* OGLImageViewRenderer.cpp */; };
-		431756DE2788A6DC00F6946F /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756DC2788A6DC00F6946F /* Graphics.cpp */; };
 		431DCDE61C5D4620009CA06A /* BoardLayerView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */; };
 		431DCDE91C5D64F3009CA06A /* BlueprintManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */; };
 		431DCDED1C5D665E009CA06A /* example_blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 431DCDEC1C5D665E009CA06A /* example_blueprint.json */; };
 		431F25FF1C42C34F0064BF81 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431F25FE1C42C34F0064BF81 /* shader_config.plist */; };
 		4329CA641BEFF5E600F18459 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4329CA621BEFF5E600F18459 /* Renderer.cpp */; };
+		433F0B88278C61FB001BD027 /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B84278C61FB001BD027 /* SpriteManager.cpp */; };
+		433F0B89278C61FB001BD027 /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B84278C61FB001BD027 /* SpriteManager.cpp */; };
+		433F0B8C278C6255001BD027 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B8A278C6254001BD027 /* Graphics.cpp */; };
+		433F0B8D278C6255001BD027 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433F0B8A278C6254001BD027 /* Graphics.cpp */; };
 		4343C9E71C425D2B006FED90 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4343C9E51C425D2B006FED90 /* Button.cpp */; };
 		4352E1DD2766390500B0E797 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1DB2766390500B0E797 /* Game.cpp */; };
 		4352E1EC276646ED00B0E797 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1E8276646ED00B0E797 /* RootViewController.mm */; };
 		4352E1ED276646ED00B0E797 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1EA276646ED00B0E797 /* AppDelegate.mm */; };
 		4361F4611EAE561700A0CC03 /* test_tileset_HD.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */; };
 		4361F4621EAE561700A0CC03 /* test_tileset_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 4361F4601EAE561700A0CC03 /* test_tileset_HD.png */; };
+		438072002788EA0400D85E9B /* MetalRootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 438071FF2788EA0400D85E9B /* MetalRootViewController.mm */; };
+		438072022788EAB500D85E9B /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438072012788EAB500D85E9B /* MetalKit.framework */; };
 		43809F8A2788E39F00376332 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43809F892788E39F00376332 /* Metal.framework */; };
 		43809F8C2788E3A200376332 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43809F8B2788E3A200376332 /* QuartzCore.framework */; };
+		43809F8D2788E48500376332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CC37E31BC1800B009F3FD0 /* UIKit.framework */; };
+		43809F962788E4D000376332 /* MetalRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43809F902788E4D000376332 /* MetalRenderer.cpp */; };
+		43809F972788E4D000376332 /* MetalImageViewRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43809F922788E4D000376332 /* MetalImageViewRenderer.cpp */; };
+		43809F982788E4D000376332 /* MetalViewRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43809F952788E4D000376332 /* MetalViewRenderer.cpp */; };
 		43815BE121FCD45A00EC86C5 /* ScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */; };
 		4385637C1C58147D00246A70 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4385637B1C58147D00246A70 /* Message.cpp */; };
 		43A10D281C4BD27100F4A2E2 /* ViewShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */; };
@@ -53,11 +62,8 @@
 		43EDA6941C4176A900FE7F8F /* BoardDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6931C4176A900FE7F8F /* BoardDataModel.cpp */; };
 		43EDA6A61C417FD200FE7F8F /* CellView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6A41C417FD200FE7F8F /* CellView.cpp */; };
 		43F28E291BF79B4F003E86B7 /* Responder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F28E271BF79B4F003E86B7 /* Responder.cpp */; };
-		43F956C12788DE85003C9C40 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4352E1E8276646ED00B0E797 /* RootViewController.mm */; };
-		43F956C22788DE85003C9C40 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431756DC2788A6DC00F6946F /* Graphics.cpp */; };
 		43F956C32788DE85003C9C40 /* ScreenManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */; };
 		43F956C42788DE85003C9C40 /* BoardView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AFE1761C38C72A00B5A303 /* BoardView.cpp */; };
-		43F956C52788DE85003C9C40 /* SpriteManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */; };
 		43F956C62788DE85003C9C40 /* AnimationCurves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E63F501EADD3370048286E /* AnimationCurves.cpp */; };
 		43F956C72788DE85003C9C40 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C2A1BEF86BC00A7128E /* Transform.cpp */; };
 		43F956C82788DE85003C9C40 /* Animator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C0E1BEF84D500A7128E /* Animator.cpp */; };
@@ -80,7 +86,6 @@
 		43F956DA2788DE85003C9C40 /* BoardDataModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43EDA6931C4176A900FE7F8F /* BoardDataModel.cpp */; };
 		43F956DB2788DE85003C9C40 /* Responder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F28E271BF79B4F003E86B7 /* Responder.cpp */; };
 		43F956DD2788DE85003C9C40 /* ImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C241BEF86BC00A7128E /* ImageView.cpp */; };
-		43F956DE2788DE85003C9C40 /* ShaderManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 430A3C1E1BEF869D00A7128E /* ShaderManager.mm */; };
 		43F956E52788DE85003C9C40 /* main_tileset_hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 430A3BDC1BEF77A200A7128E /* main_tileset_hd.plist */; };
 		43F956E62788DE85003C9C40 /* shader_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431F25FE1C42C34F0064BF81 /* shader_config.plist */; };
 		43F956E72788DE85003C9C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CC37D11BC17869009F3FD0 /* Main.storyboard */; };
@@ -100,8 +105,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.release.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.release.xcconfig"; sourceTree = "<group>"; };
-		08B10253B94B230317C9CFEB /* Pods_sprawl_opengl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_opengl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		250365B364B61306D1FB5E26 /* Pods_sprawl_metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3698C4F513B8B0F548C76DC7 /* Pods-sprawl_opengl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.debug.xcconfig"; sourceTree = "<group>"; };
 		430A3BDC1BEF77A200A7128E /* main_tileset_hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = main_tileset_hd.plist; path = assets/tilesets/main_tileset_hd.plist; sourceTree = "<group>"; };
 		430A3BDD1BEF77A200A7128E /* main_tileset_hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_tileset_hd.png; path = assets/tilesets/main_tileset_hd.png; sourceTree = "<group>"; };
 		430A3BF71BEF845600A7128E /* BoardDataModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardDataModel.hpp; path = source/game/board/BoardDataModel.hpp; sourceTree = "<group>"; };
@@ -127,15 +132,13 @@
 		430A3C331BEF86C800A7128E /* IUpdatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IUpdatable.h; path = source/engine/update/IUpdatable.h; sourceTree = "<group>"; };
 		430A3C371BEF86D600A7128E /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = source/engine/util/Logger.h; sourceTree = "<group>"; };
 		430A3C381BEF86D600A7128E /* Logger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Logger.mm; path = source/engine/util/Logger.mm; sourceTree = "<group>"; };
-		430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = SpriteManager.mm; sourceTree = "<group>"; };
+		430A3C3D1BEF8ADB00A7128E /* IOSSpriteHandler.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = IOSSpriteHandler.mm; sourceTree = "<group>"; };
 		431756D1278894F600F6946F /* OGLRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OGLRenderer.cpp; sourceTree = "<group>"; };
 		431756D2278894F600F6946F /* OGLRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OGLRenderer.hpp; sourceTree = "<group>"; };
 		431756D42788959200F6946F /* OGLViewRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OGLViewRenderer.cpp; sourceTree = "<group>"; };
 		431756D52788959200F6946F /* OGLViewRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OGLViewRenderer.hpp; sourceTree = "<group>"; };
 		431756D7278898CB00F6946F /* OGLImageViewRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OGLImageViewRenderer.cpp; sourceTree = "<group>"; };
 		431756D8278898CB00F6946F /* OGLImageViewRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OGLImageViewRenderer.hpp; sourceTree = "<group>"; };
-		431756DC2788A6DC00F6946F /* Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graphics.cpp; sourceTree = "<group>"; };
-		431756DD2788A6DC00F6946F /* Graphics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graphics.hpp; sourceTree = "<group>"; };
 		431DCDE41C5D4620009CA06A /* BoardLayerView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardLayerView.cpp; path = source/game/board/BoardLayerView.cpp; sourceTree = "<group>"; };
 		431DCDE51C5D4620009CA06A /* BoardLayerView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardLayerView.hpp; path = source/game/board/BoardLayerView.hpp; sourceTree = "<group>"; };
 		431DCDE71C5D64F3009CA06A /* BlueprintManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlueprintManager.mm; sourceTree = "<group>"; };
@@ -145,34 +148,49 @@
 		431F25FE1C42C34F0064BF81 /* shader_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = shader_config.plist; path = assets/shaders/shader_config.plist; sourceTree = "<group>"; };
 		4329CA621BEFF5E600F18459 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = source/engine/rendering/Renderer.cpp; sourceTree = "<group>"; };
 		4329CA631BEFF5E600F18459 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Renderer.hpp; path = source/engine/rendering/Renderer.hpp; sourceTree = "<group>"; };
+		433F0B83278C61FB001BD027 /* SpriteHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SpriteHandler.hpp; path = source/engine/texture/SpriteHandler.hpp; sourceTree = "<group>"; };
+		433F0B84278C61FB001BD027 /* SpriteManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteManager.cpp; path = source/engine/texture/SpriteManager.cpp; sourceTree = "<group>"; };
+		433F0B85278C61FB001BD027 /* SpriteManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SpriteManager.hpp; path = source/engine/texture/SpriteManager.hpp; sourceTree = "<group>"; };
+		433F0B8A278C6254001BD027 /* Graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Graphics.cpp; path = source/engine/rendering/Graphics.cpp; sourceTree = "<group>"; };
+		433F0B8B278C6254001BD027 /* Graphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Graphics.hpp; path = source/engine/rendering/Graphics.hpp; sourceTree = "<group>"; };
+		433F0B8E278C69FB001BD027 /* Info_metal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_metal.plist; path = meta/Info_metal.plist; sourceTree = "<group>"; };
 		4343C9E51C425D2B006FED90 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Button.cpp; path = source/engine/ui/Button.cpp; sourceTree = "<group>"; };
 		4343C9E61C425D2B006FED90 /* Button.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Button.hpp; path = source/engine/ui/Button.hpp; sourceTree = "<group>"; };
 		4352E1DB2766390500B0E797 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = source/game/base/Game.cpp; sourceTree = "<group>"; };
 		4352E1DC2766390500B0E797 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Game.hpp; path = source/game/base/Game.hpp; sourceTree = "<group>"; };
-		4352E1E027663C5D00B0E797 /* SpriteManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpriteManager.hpp; sourceTree = "<group>"; };
+		4352E1E027663C5D00B0E797 /* IOSSpriteHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOSSpriteHandler.hpp; sourceTree = "<group>"; };
 		4352E1E8276646ED00B0E797 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
 		4352E1E9276646ED00B0E797 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4352E1EA276646ED00B0E797 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		4352E1EB276646ED00B0E797 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		4352E1F22766476D00B0E797 /* SpriteLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteLoader.h; sourceTree = "<group>"; };
 		4352E1F32766484900B0E797 /* ScreenHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenHandler.h; sourceTree = "<group>"; };
 		4361F45F1EAE561700A0CC03 /* test_tileset_HD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = test_tileset_HD.plist; path = assets/tilesets/test_tileset/test_tileset_HD.plist; sourceTree = "<group>"; };
 		4361F4601EAE561700A0CC03 /* test_tileset_HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test_tileset_HD.png; path = assets/tilesets/test_tileset/test_tileset_HD.png; sourceTree = "<group>"; };
 		437281581E9FD3BB00406630 /* AnimationCurves.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AnimationCurves.hpp; path = source/engine/animation/AnimationCurves.hpp; sourceTree = "<group>"; };
+		438071FE2788E92200D85E9B /* MetalRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRootViewController.h; sourceTree = "<group>"; };
+		438071FF2788EA0400D85E9B /* MetalRootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalRootViewController.mm; sourceTree = "<group>"; };
+		438072012788EAB500D85E9B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		43809F892788E39F00376332 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		43809F8B2788E3A200376332 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43809F902788E4D000376332 /* MetalRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetalRenderer.cpp; sourceTree = "<group>"; };
+		43809F912788E4D000376332 /* MetalViewRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MetalViewRenderer.hpp; sourceTree = "<group>"; };
+		43809F922788E4D000376332 /* MetalImageViewRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetalImageViewRenderer.cpp; sourceTree = "<group>"; };
+		43809F932788E4D000376332 /* MetalImageViewRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MetalImageViewRenderer.hpp; sourceTree = "<group>"; };
+		43809F942788E4D000376332 /* MetalRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MetalRenderer.hpp; sourceTree = "<group>"; };
+		43809F952788E4D000376332 /* MetalViewRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetalViewRenderer.cpp; sourceTree = "<group>"; };
 		43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenManager.cpp; sourceTree = "<group>"; };
 		43815BE021FCD45A00EC86C5 /* ScreenManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScreenManager.hpp; sourceTree = "<group>"; };
 		4385637B1C58147D00246A70 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Message.cpp; path = source/engine/message/Message.cpp; sourceTree = "<group>"; };
 		4385A58B1C55503C0079198B /* Message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Message.hpp; path = source/engine/message/Message.hpp; sourceTree = "<group>"; };
 		43A10D261C4BD27100F4A2E2 /* ViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ViewShader.fsh; path = assets/shaders/ViewShader.fsh; sourceTree = "<group>"; };
 		43A10D271C4BD27100F4A2E2 /* ViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ViewShader.vsh; path = assets/shaders/ViewShader.vsh; sourceTree = "<group>"; };
+		43AD74FCABB8D08420E6C273 /* Pods-sprawl_metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.release.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.release.xcconfig"; sourceTree = "<group>"; };
 		43AFE1761C38C72A00B5A303 /* BoardView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardView.cpp; path = source/game/board/BoardView.cpp; sourceTree = "<group>"; };
 		43AFE1771C38C72A00B5A303 /* BoardView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardView.hpp; path = source/game/board/BoardView.hpp; sourceTree = "<group>"; };
 		43BF412E1BE6915A00D8011B /* ImageViewShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.fsh; path = assets/shaders/ImageViewShader.fsh; sourceTree = "<group>"; };
 		43BF412F1BE6915A00D8011B /* ImageViewShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ImageViewShader.vsh; path = assets/shaders/ImageViewShader.vsh; sourceTree = "<group>"; };
 		43CC37901BC17594009F3FD0 /* sprawl_opengl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_opengl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		43CC37C21BC17761009F3FD0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
+		43CC37C21BC17761009F3FD0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = xib/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43CC37D11BC17869009F3FD0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = xib/Main.storyboard; sourceTree = "<group>"; };
 		43CC37D71BC178A8009F3FD0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = meta/Info.plist; sourceTree = "<group>"; };
@@ -188,16 +206,14 @@
 		43F28E281BF79B4F003E86B7 /* Responder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Responder.hpp; path = source/engine/input/Responder.hpp; sourceTree = "<group>"; };
 		43F28E2A1BF8EC13003E86B7 /* Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
 		43F956F72788DE85003C9C40 /* sprawl_metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_metal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		43F956F82788DE85003C9C40 /* sprawl_opengl copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "sprawl_opengl copy-Info.plist"; path = "/Users/benjamin/Repos/sprawl/sprawl_opengl copy-Info.plist"; sourceTree = "<absolute>"; };
 		43FAACE527879E7500B300BF /* MemoryProfiler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryProfiler.cpp; path = source/engine/util/MemoryProfiler.cpp; sourceTree = "<group>"; };
 		43FAACE627879E7500B300BF /* MemoryProfiler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MemoryProfiler.hpp; path = source/engine/util/MemoryProfiler.hpp; sourceTree = "<group>"; };
 		43FFDA4D1C829FBA000BFB25 /* BoardInputView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardInputView.cpp; path = source/game/input/BoardInputView.cpp; sourceTree = "<group>"; };
 		43FFDA4E1C829FBA000BFB25 /* BoardInputView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BoardInputView.hpp; path = source/game/input/BoardInputView.hpp; sourceTree = "<group>"; };
-		4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.debug.xcconfig"; sourceTree = "<group>"; };
+		4D99F62511FE17D0B4C47760 /* Pods-sprawl_metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.debug.xcconfig"; sourceTree = "<group>"; };
 		58E63F501EADD3370048286E /* AnimationCurves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationCurves.cpp; path = source/engine/animation/AnimationCurves.cpp; sourceTree = "<group>"; };
-		6AA1A674D826AEAE0B5F8C29 /* Pods_sprawl_metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.debug.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.debug.xcconfig"; sourceTree = "<group>"; };
-		75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.release.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.release.xcconfig"; sourceTree = "<group>"; };
+		D1CD3E74058B4CC3FFA28A60 /* Pods_sprawl_opengl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprawl_opengl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D815A81C774E35DB40A72ED0 /* Pods-sprawl_opengl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_opengl.release.xcconfig"; path = "Target Support Files/Pods-sprawl_opengl/Pods-sprawl_opengl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +231,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438072022788EAB500D85E9B /* MetalKit.framework in Frameworks */,
+				43809F8D2788E48500376332 /* UIKit.framework in Frameworks */,
 				43809F8C2788E3A200376332 /* QuartzCore.framework in Frameworks */,
 				43809F8A2788E39F00376332 /* Metal.framework in Frameworks */,
 			);
@@ -338,7 +356,9 @@
 			isa = PBXGroup;
 			children = (
 				430A3C201BEF86AE00A7128E /* Sprite.h */,
-				4352E1F22766476D00B0E797 /* SpriteLoader.h */,
+				433F0B83278C61FB001BD027 /* SpriteHandler.hpp */,
+				433F0B84278C61FB001BD027 /* SpriteManager.cpp */,
+				433F0B85278C61FB001BD027 /* SpriteManager.hpp */,
 			);
 			name = texture;
 			sourceTree = "<group>";
@@ -381,6 +401,7 @@
 		431756CF278894D700F6946F /* rendering */ = {
 			isa = PBXGroup;
 			children = (
+				43809F8F2788E4D000376332 /* metal */,
 				431756D0278894DC00F6946F /* opengl */,
 			);
 			path = rendering;
@@ -410,10 +431,10 @@
 		4329CA5B1BEFF50800F18459 /* rendering */ = {
 			isa = PBXGroup;
 			children = (
+				433F0B8A278C6254001BD027 /* Graphics.cpp */,
+				433F0B8B278C6254001BD027 /* Graphics.hpp */,
 				4329CA621BEFF5E600F18459 /* Renderer.cpp */,
 				4329CA631BEFF5E600F18459 /* Renderer.hpp */,
-				431756DC2788A6DC00F6946F /* Graphics.cpp */,
-				431756DD2788A6DC00F6946F /* Graphics.hpp */,
 			);
 			name = rendering;
 			sourceTree = "<group>";
@@ -433,10 +454,13 @@
 		4352E1EE276646F700B0E797 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				4352E1E8276646ED00B0E797 /* RootViewController.mm */,
-				4352E1EB276646ED00B0E797 /* RootViewController.h */,
+				43CC37C21BC17761009F3FD0 /* main.m */,
 				4352E1EA276646ED00B0E797 /* AppDelegate.mm */,
 				4352E1E9276646ED00B0E797 /* AppDelegate.h */,
+				4352E1E8276646ED00B0E797 /* RootViewController.mm */,
+				4352E1EB276646ED00B0E797 /* RootViewController.h */,
+				438071FF2788EA0400D85E9B /* MetalRootViewController.mm */,
+				438071FE2788E92200D85E9B /* MetalRootViewController.h */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -446,8 +470,8 @@
 			children = (
 				43815BDF21FCD45A00EC86C5 /* ScreenManager.cpp */,
 				43815BE021FCD45A00EC86C5 /* ScreenManager.hpp */,
-				430A3C3D1BEF8ADB00A7128E /* SpriteManager.mm */,
-				4352E1E027663C5D00B0E797 /* SpriteManager.hpp */,
+				430A3C3D1BEF8ADB00A7128E /* IOSSpriteHandler.mm */,
+				4352E1E027663C5D00B0E797 /* IOSSpriteHandler.hpp */,
 			);
 			path = visuals;
 			sourceTree = "<group>";
@@ -468,6 +492,19 @@
 				4361F4601EAE561700A0CC03 /* test_tileset_HD.png */,
 			);
 			name = test_tileset;
+			sourceTree = "<group>";
+		};
+		43809F8F2788E4D000376332 /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				43809F902788E4D000376332 /* MetalRenderer.cpp */,
+				43809F942788E4D000376332 /* MetalRenderer.hpp */,
+				43809F952788E4D000376332 /* MetalViewRenderer.cpp */,
+				43809F912788E4D000376332 /* MetalViewRenderer.hpp */,
+				43809F922788E4D000376332 /* MetalImageViewRenderer.cpp */,
+				43809F932788E4D000376332 /* MetalImageViewRenderer.hpp */,
+			);
+			path = metal;
 			sourceTree = "<group>";
 		};
 		43BF41291BE6913E00D8011B /* assets */ = {
@@ -509,7 +546,6 @@
 				43CC37921BC17594009F3FD0 /* sprawl */,
 				43CC37E51BC18022009F3FD0 /* Frameworks */,
 				43CC37911BC17594009F3FD0 /* Products */,
-				43F956F82788DE85003C9C40 /* sprawl_opengl copy-Info.plist */,
 				B88C4610C3A4DF1E9AFEFC27 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -540,7 +576,6 @@
 				4352E1E7276646ED00B0E797 /* ios */,
 				430A3BEE1BEF840900A7128E /* game */,
 				430A3BE41BEF838C00A7128E /* engine */,
-				43CC37C21BC17761009F3FD0 /* main.m */,
 			);
 			name = source;
 			sourceTree = "<group>";
@@ -557,6 +592,7 @@
 		43CC37D41BC17879009F3FD0 /* meta */ = {
 			isa = PBXGroup;
 			children = (
+				433F0B8E278C69FB001BD027 /* Info_metal.plist */,
 				43CC37D91BC178C6009F3FD0 /* Images.xcassets */,
 				43CC37D71BC178A8009F3FD0 /* Info.plist */,
 			);
@@ -566,13 +602,14 @@
 		43CC37E51BC18022009F3FD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				438072012788EAB500D85E9B /* MetalKit.framework */,
 				43809F8B2788E3A200376332 /* QuartzCore.framework */,
 				43809F892788E39F00376332 /* Metal.framework */,
 				43CC37E31BC1800B009F3FD0 /* UIKit.framework */,
 				43CC37E11BC17FFA009F3FD0 /* OpenGLES.framework */,
 				43CC37DF1BC17FDA009F3FD0 /* GLKit.framework */,
-				6AA1A674D826AEAE0B5F8C29 /* Pods_sprawl_metal.framework */,
-				08B10253B94B230317C9CFEB /* Pods_sprawl_opengl.framework */,
+				250365B364B61306D1FB5E26 /* Pods_sprawl_metal.framework */,
+				D1CD3E74058B4CC3FFA28A60 /* Pods_sprawl_opengl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -616,10 +653,10 @@
 		B88C4610C3A4DF1E9AFEFC27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */,
-				75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */,
-				72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */,
-				0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */,
+				4D99F62511FE17D0B4C47760 /* Pods-sprawl_metal.debug.xcconfig */,
+				43AD74FCABB8D08420E6C273 /* Pods-sprawl_metal.release.xcconfig */,
+				3698C4F513B8B0F548C76DC7 /* Pods-sprawl_opengl.debug.xcconfig */,
+				D815A81C774E35DB40A72ED0 /* Pods-sprawl_opengl.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -631,7 +668,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43CC37AB1BC17594009F3FD0 /* Build configuration list for PBXNativeTarget "sprawl_opengl" */;
 			buildPhases = (
-				7990CA7226163BE30BDE691E /* [CP] Check Pods Manifest.lock */,
+				0679D289B9418D66884DDC0D /* [CP] Check Pods Manifest.lock */,
 				43CC378C1BC17594009F3FD0 /* Sources */,
 				43CC378D1BC17594009F3FD0 /* Frameworks */,
 				43CC378E1BC17594009F3FD0 /* Resources */,
@@ -649,7 +686,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43F956F42788DE85003C9C40 /* Build configuration list for PBXNativeTarget "sprawl_metal" */;
 			buildPhases = (
-				EE4BAFADA300CF5FA856C04E /* [CP] Check Pods Manifest.lock */,
+				D127D705AAA411CAF01F6506 /* [CP] Check Pods Manifest.lock */,
 				43F956BF2788DE85003C9C40 /* Sources */,
 				43F956DF2788DE85003C9C40 /* Frameworks */,
 				43F956E42788DE85003C9C40 /* Resources */,
@@ -740,7 +777,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7990CA7226163BE30BDE691E /* [CP] Check Pods Manifest.lock */ = {
+		0679D289B9418D66884DDC0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -762,7 +799,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE4BAFADA300CF5FA856C04E /* [CP] Check Pods Manifest.lock */ = {
+		D127D705AAA411CAF01F6506 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -793,10 +830,9 @@
 			files = (
 				431756D9278898CB00F6946F /* OGLImageViewRenderer.cpp in Sources */,
 				4352E1EC276646ED00B0E797 /* RootViewController.mm in Sources */,
-				431756DE2788A6DC00F6946F /* Graphics.cpp in Sources */,
 				43815BE121FCD45A00EC86C5 /* ScreenManager.cpp in Sources */,
 				43AFE1781C38C72A00B5A303 /* BoardView.cpp in Sources */,
-				430A3C3F1BEF8ADB00A7128E /* SpriteManager.mm in Sources */,
+				430A3C3F1BEF8ADB00A7128E /* IOSSpriteHandler.mm in Sources */,
 				58E63F511EADD3370048286E /* AnimationCurves.cpp in Sources */,
 				430A3C311BEF86BC00A7128E /* Transform.cpp in Sources */,
 				430A3C121BEF84D500A7128E /* Animator.cpp in Sources */,
@@ -816,11 +852,13 @@
 				4385637C1C58147D00246A70 /* Message.cpp in Sources */,
 				4352E1DD2766390500B0E797 /* Game.cpp in Sources */,
 				430A3C391BEF86D600A7128E /* Logger.mm in Sources */,
+				433F0B8C278C6255001BD027 /* Graphics.cpp in Sources */,
 				431756D62788959200F6946F /* OGLViewRenderer.cpp in Sources */,
 				43EDA6941C4176A900FE7F8F /* BoardDataModel.cpp in Sources */,
 				43F28E291BF79B4F003E86B7 /* Responder.cpp in Sources */,
 				431756D3278894F600F6946F /* OGLRenderer.cpp in Sources */,
 				430A3C2E1BEF86BC00A7128E /* ImageView.cpp in Sources */,
+				433F0B88278C61FB001BD027 /* SpriteManager.cpp in Sources */,
 				430A3C1F1BEF869D00A7128E /* ShaderManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,13 +867,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F956C12788DE85003C9C40 /* RootViewController.mm in Sources */,
-				43F956C22788DE85003C9C40 /* Graphics.cpp in Sources */,
 				43F956C32788DE85003C9C40 /* ScreenManager.cpp in Sources */,
 				43F956C42788DE85003C9C40 /* BoardView.cpp in Sources */,
-				43F956C52788DE85003C9C40 /* SpriteManager.mm in Sources */,
+				433F0B8D278C6255001BD027 /* Graphics.cpp in Sources */,
 				43F956C62788DE85003C9C40 /* AnimationCurves.cpp in Sources */,
 				43F956C72788DE85003C9C40 /* Transform.cpp in Sources */,
+				433F0B89278C61FB001BD027 /* SpriteManager.cpp in Sources */,
 				43F956C82788DE85003C9C40 /* Animator.cpp in Sources */,
 				43F956C92788DE85003C9C40 /* Renderer.cpp in Sources */,
 				43F956CA2788DE85003C9C40 /* AppDelegate.mm in Sources */,
@@ -846,17 +883,20 @@
 				43F956CF2788DE85003C9C40 /* Object.cpp in Sources */,
 				43F956D02788DE85003C9C40 /* View.cpp in Sources */,
 				43F956D12788DE85003C9C40 /* ViewAnimator.cpp in Sources */,
+				43809F972788E4D000376332 /* MetalImageViewRenderer.cpp in Sources */,
 				43F956D22788DE85003C9C40 /* BlueprintManager.mm in Sources */,
 				43F956D32788DE85003C9C40 /* BoardLayerView.cpp in Sources */,
+				43809F962788E4D000376332 /* MetalRenderer.cpp in Sources */,
 				43F956D42788DE85003C9C40 /* MessageManager.cpp in Sources */,
+				43809F982788E4D000376332 /* MetalViewRenderer.cpp in Sources */,
 				43F956D52788DE85003C9C40 /* BoardInputView.cpp in Sources */,
 				43F956D62788DE85003C9C40 /* Message.cpp in Sources */,
 				43F956D72788DE85003C9C40 /* Game.cpp in Sources */,
 				43F956D82788DE85003C9C40 /* Logger.mm in Sources */,
+				438072002788EA0400D85E9B /* MetalRootViewController.mm in Sources */,
 				43F956DA2788DE85003C9C40 /* BoardDataModel.cpp in Sources */,
 				43F956DB2788DE85003C9C40 /* Responder.cpp in Sources */,
 				43F956DD2788DE85003C9C40 /* ImageView.cpp in Sources */,
-				43F956DE2788DE85003C9C40 /* ShaderManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,7 +1009,7 @@
 		};
 		43CC37AC1BC17594009F3FD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72D6A9849D3D4A366EBA341C /* Pods-sprawl_opengl.debug.xcconfig */;
+			baseConfigurationReference = 3698C4F513B8B0F548C76DC7 /* Pods-sprawl_opengl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1000,6 +1040,7 @@
 					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-DGRAPHICS_OPENGL";
 				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1008,7 +1049,7 @@
 		};
 		43CC37AD1BC17594009F3FD0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0316F88830DE9A8CAFD5B1A2 /* Pods-sprawl_opengl.release.xcconfig */;
+			baseConfigurationReference = D815A81C774E35DB40A72ED0 /* Pods-sprawl_opengl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1038,6 +1079,7 @@
 					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-DGRAPHICS_OPENGL";
 				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1046,7 +1088,7 @@
 		};
 		43F956F52788DE85003C9C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CAADD49AFA66D8E1125ADD8 /* Pods-sprawl_metal.debug.xcconfig */;
+			baseConfigurationReference = 4D99F62511FE17D0B4C47760 /* Pods-sprawl_metal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1057,7 +1099,7 @@
 					"COCOAPODS=1",
 					"GLES_SILENCE_DEPRECATION=1",
 				);
-				INFOPLIST_FILE = "sprawl_opengl copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/sprawl/meta/Info_metal.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -1077,6 +1119,7 @@
 					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-DGRAPHICS_METAL";
 				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1085,7 +1128,7 @@
 		};
 		43F956F62788DE85003C9C40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75EDC212BCC85311F315DD51 /* Pods-sprawl_metal.release.xcconfig */;
+			baseConfigurationReference = 43AD74FCABB8D08420E6C273 /* Pods-sprawl_metal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1096,7 +1139,7 @@
 					"COCOAPODS=1",
 					"GLES_SILENCE_DEPRECATION=1",
 				);
-				INFOPLIST_FILE = "sprawl_opengl copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/sprawl/meta/Info_metal.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
@@ -1115,6 +1158,7 @@
 					"\"${PODS_ROOT}/Headers/Public/glm/virtrev\"",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-DGRAPHICS_METAL";
 				PRODUCT_BUNDLE_IDENTIFIER = thecaffcoder.sprawl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

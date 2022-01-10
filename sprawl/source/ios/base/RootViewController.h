@@ -10,7 +10,6 @@
 #import <GLKit/GLKit.h>
 
 #include "Logger.h"
-
 #include "Game.hpp"
 
 @interface RootViewController : GLKViewController {
@@ -18,7 +17,7 @@
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (nonatomic) Game *game;
-@property (nonatomic) SpriteManager spriteManager;
+@property (nonatomic) IOSSpriteManager spriteManager;
 @property (nonatomic) ScreenManager screenManager;
 - (void)setupOpenGL;
 - (void)tearDownGL;

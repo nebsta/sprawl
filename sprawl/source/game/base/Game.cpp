@@ -8,10 +8,10 @@
 
 #include "Game.hpp"
 
-Game::Game(const ScreenHandler& screenHandler, const SpriteLoader& spriteLoader) :
+Game::Game(const ScreenHandler& screenHandler) :
 _mainView(VECTOR_EMPTY,glm::vec2(screenHandler.screenWidth(),screenHandler.screenHeight())),
-_screenHandler(screenHandler),
-_spriteLoader(spriteLoader) {
+_spriteManager(),
+_screenHandler(screenHandler) {
     
     _mainView.renderer()->setTint(COLOR_RED);
     

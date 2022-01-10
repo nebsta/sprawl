@@ -8,7 +8,7 @@
 
 #include "BoardView.hpp"
 
-BoardView::BoardView(BoardDataModel& model, const SpriteLoader& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE)
+BoardView::BoardView(BoardDataModel& model, const SpriteManager& spriteLoader) : View(VECTOR_EMPTY,BOARDVIEW_DEFAULT_SIZE)
 {
     model.setListener(this);
     
@@ -81,8 +81,8 @@ BoardView::~BoardView() {
     
 }
 
-void BoardView::buildLayerView(const BoardLayer &layer, const SpriteLoader& spriteLoader) {
-    BoardLayerView *view = new BoardLayerView(transform().size(), spriteLoader);
+void BoardView::buildLayerView(const BoardLayer &layer, const SpriteManager& spriteManager) {
+    BoardLayerView *view = new BoardLayerView(transform().size(), spriteManager);
     addChild(view);
     _layers[layer] = view;
 }

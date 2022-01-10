@@ -14,7 +14,7 @@ target 'sprawl_opengl' do
 end
 
 target 'sprawl_metal' do
-  pod 'Metal'
+  pod 'glm'
 end
 
 # post_install do |installer|
