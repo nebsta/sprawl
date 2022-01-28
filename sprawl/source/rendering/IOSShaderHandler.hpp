@@ -1,26 +1,15 @@
 //
-//  ShaderManager.hpp
+//  IOSShaderHandler.hpp
 //  sprawl
 //
-//  Created by Benjamin Wallis on 4/10/2015.
-//  Copyright © 2015 The Caffeinated Coder. All rights reserved.
+//  Created by Benjamin Wallis on 13/01/2022.
+//  Copyright © 2022 The Caffeinated Coder. All rights reserved.
 //
 
-#ifndef ShaderManager_hpp
-#define ShaderManager_hpp
-
-#import <GLKit/GLKit.h>
-#import <OpenGLES/ES2/glext.h>
-#import <Foundation/Foundation.h>
+#ifndef IOSShaderHandler_hpp
+#define IOSShaderHandler_hpp
 
 #include <stdio.h>
-#include <string>
-#include <map>
-
-#include "Logger.h"
-
-using namespace std;
-
 
 typedef enum Attribute {
     Attribute_Position = 0,
@@ -36,10 +25,6 @@ typedef enum Uniform {
 class ShaderManager {
     
 public:
-    static ShaderManager& instance() {
-        static ShaderManager instance;
-        return instance;
-    }
     
     void initialize();
     void teardown();
@@ -59,4 +44,4 @@ private:
     bool validateProgram(GLuint program);
 };
 
-#endif /* ShaderManager_hpp */
+#endif /* IOSShaderHandler_hpp */

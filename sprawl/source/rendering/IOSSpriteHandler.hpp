@@ -23,7 +23,7 @@ class IOSSpriteHandler : public SpriteHandler {
     
 public:
     IOSSpriteHandler();
-    ~IOSSpriteHandler();
+    virtual ~IOSSpriteHandler();
     
     void loadAtlases();
     Sprite loadSprite(const string& file, const string& spriteName);

@@ -12,12 +12,11 @@
 #include "Logger.h"
 #include "Game.hpp"
 
-@interface RootViewController : GLKViewController {
+@interface OGLViewController : GLKViewController {
     glm::mat4 _projectionMatrix;
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (nonatomic) Game *game;
-@property (nonatomic) IOSSpriteManager spriteManager;
 @property (nonatomic) ScreenManager screenManager;
 - (void)setupOpenGL;
 - (void)tearDownGL;

@@ -10,6 +10,7 @@
 #define OpenGLRenderer_hpp
 
 #include <stdio.h>
+#include <Renderer.hpp>
 #import "Renderer.hpp"
 
 class OGLRenderer : public Renderer {

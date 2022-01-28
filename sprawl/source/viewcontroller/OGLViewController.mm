@@ -6,15 +6,15 @@
 //  Copyright © 2015 The Caffeinated Coder. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "OGLViewController.h"
 
 #define MS_PER_UPDATE 30
 
-@interface RootViewController ()
+@interface OGLViewController ()
 @property(nonatomic,readwrite) float frameLag;
 @end
 
-@implementation RootViewController
+@implementation OGLViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +24,7 @@
     [self setupOpenGL];
     
     ShaderManager::instance().initialize();
-    _game = new Game(ScreenManager::instance(), _spriteManager);
+    _game = new Game(ScreenManager::instance());
 }
 
 - (void)dealloc {

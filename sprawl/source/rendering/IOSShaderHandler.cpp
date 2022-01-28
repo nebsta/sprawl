@@ -1,12 +1,12 @@
 //
-//  ShaderManager.cpp
+//  IOSShaderHandler.cpp
 //  sprawl
 //
-//  Created by Benjamin Wallis on 4/10/2015.
-//  Copyright © 2015 The Caffeinated Coder. All rights reserved.
+//  Created by Benjamin Wallis on 13/01/2022.
+//  Copyright © 2022 The Caffeinated Coder. All rights reserved.
 //
 
-#include "ShaderManager.h"
+#include "IOSShaderHandler.hpp"
 
 typedef map<string,GLuint>::iterator ProgramIterator;
 
