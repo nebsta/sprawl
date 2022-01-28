@@ -1,0 +1,6 @@
+framework module Pods_sprawl_metal {
+  umbrella header "Pods-sprawl_metal-umbrella.h"
+
+  export *
+  module * { export * }
+}

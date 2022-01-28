@@ -1,0 +1,38 @@
+[settings]
+    arch=armv8
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=13.0
+    os=Macos
+
+[requires]
+    sprawl-source/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=armv8
+    arch_build=armv8
+    build_type=Release
+    compiler=apple-clang
+    compiler.libcxx=libc++
+    compiler.version=13.0
+    os=Macos
+    os_build=Macos
+
+[full_requires]
+    glm/0.9.9.8:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    grumble/1.0.0:6a285b47ee1ce53094cabe2413a2daebfbd863b8
+    nlohmann_json/3.10.5:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    sprawl-source/1.0.0:5bd8aa3d95a0a4de67b43a1e6068bf50ebd01e96
+
+[full_options]
+
+
+[recipe_hash]
+
+
+[env]
+

@@ -1,0 +1,5 @@
+[requires]
+sprawl-source/1.0.0
+
+[generators]
+xcode

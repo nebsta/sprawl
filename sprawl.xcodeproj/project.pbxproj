@@ -106,6 +106,8 @@
 		438072012788EAB500D85E9B /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		43809F892788E39F00376332 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		43809F8B2788E3A200376332 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43A563D827A3FB4B00226A6A /* conanfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conanfile.txt; sourceTree = "<group>"; };
+		43A563D927A3FBC900226A6A /* conanbuildinfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = conanbuildinfo.xcconfig; sourceTree = "<group>"; };
 		43AD74FCABB8D08420E6C273 /* Pods-sprawl_metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprawl_metal.release.xcconfig"; path = "Target Support Files/Pods-sprawl_metal/Pods-sprawl_metal.release.xcconfig"; sourceTree = "<group>"; };
 		43CC37901BC17594009F3FD0 /* sprawl_opengl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprawl_opengl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CC37D01BC17869009F3FD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = xib/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -289,6 +291,8 @@
 		43CC37871BC17594009F3FD0 = {
 			isa = PBXGroup;
 			children = (
+				43A563D927A3FBC900226A6A /* conanbuildinfo.xcconfig */,
+				43A563D827A3FB4B00226A6A /* conanfile.txt */,
 				43CC37921BC17594009F3FD0 /* sprawl */,
 				43CC37E51BC18022009F3FD0 /* Frameworks */,
 				43CC37911BC17594009F3FD0 /* Products */,
